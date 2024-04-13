@@ -13,7 +13,9 @@ Probability measures the likelihood of an event occurring. It is fundamental in 
 ### Probability of an Event
 The formula for the probability of an event A is given by:
 
-$$P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of possible outcomes}}$$
+$$
+P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of possible outcomes}}
+$$
 
 
 
