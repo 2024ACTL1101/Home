@@ -8,6 +8,11 @@ Probability plays a crucial role in actuarial science, aiding in making decision
 ### Definition of Probability
 Probability measures the likelihood of an event occurring. It is fundamental in assessing risks and making predictions in actuarial science.
 
+The formula for the probability of an event A is given by:
+\[
+P(A) = \frac{\text{number of favorable outcomes}}{\text{total number of possible outcomes}}
+\]
+
 ### Probability Rules
 Basic rules such as the addition and multiplication rules are essential for combining probabilities in complex scenarios.
 
