@@ -1,5 +1,3 @@
-<div align="center" style="max-width: 800px; margin: auto; padding: 20px;">
-
 
 
 # Introduction to Probability in Actuarial Studies
