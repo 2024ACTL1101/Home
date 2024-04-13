@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 # Introduction to Probability in Actuarial Studies
 
 ## Introduction
