@@ -41,13 +41,18 @@ Where $A^{\\text{c}}$ means not $A$, $A \\cup B$ means $A$ or $B$, while $A \\ca
 
 ## Determining Probabilities
 
-If all outcomes of an experiment are equally likely, a useful formula to determine the probability of an event $A$ is given by:
+If all outcomes of an experiment are equally likely, a useful formula to determine the probability of an event \(A\) is given by:
 
-$$\\Pr[A] = \\frac{\\text{number of favourable cases to } A}{\\text{number of total cases}}$$
+$$
+\Pr[A] = \frac{\text{number of favourable cases to } A}{\text{number of total cases}}
+$$
 
-Example: what is the probability of getting an odd number upon rolling a fair dice?
+Example: What is the probability of getting an odd number upon rolling a fair dice?
 
-$$\\frac{\\text{number of favourable cases}}{\\text{number of total cases}} = \\frac{3}{6} = \\frac{1}{2}.$$
+$$
+\frac{\text{number of favourable cases}}{\text{number of total cases}} = \frac{3}{6} = \frac{1}{2}.
+$$
+
 
 ## Permutations & Combinations
 
@@ -127,11 +132,22 @@ $$
 ## Probability Density Function (PDF)
 
 For a **continuous random variable** $X$, the PDF $f(x)$ is defined such that:
-$$\Pr(a \leq X \leq b) = \int_{a}^{b} f(x) dx,$$
+
+$$
+\Pr(a \leq X \leq b) = \int_{a}^{b} f(x) dx,
+$$
+
 with
-$$f(x) \geq 0 \text{ for } -\infty < x < \infty,$$
+
+$$
+f(x) \geq 0 \text{ for } -\infty < x < \infty,
+$$
+
 and
-$$\int_{-\infty}^{\infty} f(t)  dt = 1.$$
+
+$$
+\int_{-\infty}^{\infty} f(t)  dt = 1.
+$$
 
 ## Cumulative Distribution Function (CDF)
 
@@ -145,41 +161,71 @@ $$F(\infty) = 1.$$
 ### CDF: Discrete vs Continuous Case
 
 For a **discrete random variable** $X$, the CDF of $X$ can be computed as:
-$$F(x) = \Pr(X \leq x) = \sum_{k \leq x} p(k).$$
+
+$$
+F(x) = \Pr(X \leq x) = \sum_{k \leq x} p(k).
+$$
 
 For a **continuous random variable** $X$, the CDF of $X$ can be computed as:
-$$F(x) = \Pr(X \leq x) = \int_{-\infty}^{x} f(t) dt,$$
+
+$$
+F(x) = \Pr(X \leq x) = \int_{-\infty}^{x} f(t) dt,
+$$
+
 and we also have:
-$$f(x) = \frac{d}{dx} F(x).$$
+
+$$
+f(x) = \frac{d}{dx} F(x).
+$$
 
 ## Expectation
 
 The **expectation** (or **expected value**) of a random variable $X$, denoted $E[X]$ (and sometimes $\mu$), is the weighted average of all possible values $X$ can take, each value being weighted by the probability that $X$ assumes it. For discrete random variables:
-$$E[X] = \mu = \sum_{\text{all } x} x p(x)$$
+
+$$
+E[X] = \mu = \sum_{\text{all } x} x p(x)
+$$
 
 For continuous random variables:
-$$E[X] = \mu = \int_{-\infty}^{\infty} x f(x) dx$$
+
+$$
+E[X] = \mu = \int_{-\infty}^{\infty} x f(x) dx
+$$
 
 ## Expectation of a Function of $X$
 
 It is often useful to compute the expectation of a **function of** a random variable, $g(X)$:
 - For discrete random variables:
-$$E[g(X)] = \sum_{\text{all } x} g(x) p(x)$$
+  
+$$
+E[g(X)] = \sum_{\text{all } x} g(x) p(x)
+$$
 
 - For continuous random variables:
-$$E[g(X)] = \int_{-\infty}^{\infty} g(x) f(x) dx$$
+  
+$$
+E[g(X)] = \int_{-\infty}^{\infty} g(x) f(x) dx
+$$
 
 - Moments (about the origin) of a random variable are given by:
-$$E[X^r] \text{ for } r=1,2,3,\ldots$$
+  
+$$
+E[X^r] \text{ for } r=1,2,3,\ldots
+$$
 
 ## Law of Total Expectation
 
 For two random variables $X$ and $Y$, we have the so-called **Law of Total Expectation**:
 
-$$\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X|Y]].$$
+$$
+\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X|Y]].
+$$
 
 A consequence of this result is that for events $A_1, \ldots, A_n$ forming a partition of a sample space $\Omega$, we have:
-$$\mathbb{E}[X] = \sum_{i=1}^n \mathbb{E}[X|A_i] \Pr[A_i].$$
+
+$$
+\mathbb{E}[X] = \sum_{i=1}^n \mathbb{E}[X|A_i] \Pr[A_i].
+$$
 
 (events $A_i$ form a **partition** if they are all mutually exclusive and $\cup_{i=1}^n A_i = \Omega$.)
 
@@ -187,32 +233,61 @@ $$\mathbb{E}[X] = \sum_{i=1}^n \mathbb{E}[X|A_i] \Pr[A_i].$$
 ## Law of Total Expectation: Example
 
 **Question**: Let $Y$ be the number of drinks Josephine has the night before an exam, and let $X$ be her result in said exam (out of 100), with
-$$\Pr[Y=0] = 0.5, \quad \Pr[Y=i] = 0.1 \text{ for } i \in \{1,2,3,4,5\}$$
- $$\mathbb{E}[X|Y] = 90 - 2Y^2.$$
+
+$$
+\Pr[Y=0] = 0.5, \quad \Pr[Y=i] = 0.1 \text{ for } i \in \{1,2,3,4,5\}
+$$
+
+$$
+\mathbb{E}[X|Y] = 90 - 2Y^2.
+$$
+
 What is the expectation of her result in this exam?
 
 **Answer**:
-$$\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X|Y]] = \mathbb{E}[90 - 2Y^2] = 90 \cdot 0.5  + (88 + 82 + 72 + 58 + 40) \cdot 0.1 = 79.$$
+
+$$
+\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X|Y]] = \mathbb{E}[90 - 2Y^2] = 90 \cdot 0.5  + (88 + 82 + 72 + 58 + 40) \cdot 0.1 = 79.
+$$
 
 
 ## Variance
 
 The **variance**, denoted $\mathbb{V}[X]$ (or $\sigma^2$), is another key property of a random variable $X$. It is defined as
-$$\mathbb{V}[X] = \sigma^2 = \mathbb{E}[(X - \mu)^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2$$
+
+$$
+\mathbb{V}[X] = \sigma^2 = \mathbb{E}[(X - \mu)^2] = \mathbb{E}[X^2] - (\mathbb{E}[X])^2
+$$
+
 The variance measures the 'dispersion', 'spread', or 'volatility' of a random variable. We call **standard deviation** the square root of the variance, denoted $\sigma$.
 
 ## Properties of the Expectation and Variance
 
 For $X$ a random variable and $a, b$ two constants:
-$$\mathbb{E}[aX + b] = a \mathbb{E}[X] + b$$
-$$\mathbb{V}[aX + b] = a^2 \mathbb{V}[X]$$
+
+$$
+\mathbb{E}[aX + b] = a \mathbb{E}[X] + b
+$$
+
+$$
+\mathbb{V}[aX + b] = a^2 \mathbb{V}[X]
+$$
 
 For many random variables $X_1, X_2, \ldots, X_n$, we have:
-$$\mathbb{E}[X_1 + \ldots + X_n] = \mathbb{E}[X_1] + \ldots + \mathbb{E}[X_n]$$
+
+$$
+\mathbb{E}[X_1 + \ldots + X_n] = \mathbb{E}[X_1] + \ldots + \mathbb{E}[X_n]
+$$
 
 If the random variables $X_1, X_2, \ldots, X_n$ are **independent**, then:
-$$\mathbb{E}[X_1 \times \ldots \times X_n] = \mathbb{E}[X_1] \times \ldots \times \mathbb{E}[X_n]$$
-$$\mathbb{V}[X_1 + \ldots + X_n] = \mathbb{V}[X_1] + \ldots + \mathbb{V}[X_n]$$
+
+$$
+\mathbb{E}[X_1 \times \ldots \times X_n] = \mathbb{E}[X_1] \times \ldots \times \mathbb{E}[X_n]
+$$
+
+$$
+\mathbb{V}[X_1 + \ldots + X_n] = \mathbb{V}[X_1] + \ldots + \mathbb{V}[X_n]
+$$
 
 ## Common Probability Distributions in Actuarial Studies
 
@@ -228,19 +303,47 @@ We will mainly use the Poisson, Binomial, Normal, and Log-normal distributions.
 
 ## Poisson Distribution
 
-A Poisson Distribution is defined as $X \sim \text{Poisson}(\lambda)$ with the probability: $$\Pr(X=x) = \frac{e^{-\lambda} \lambda^x}{x!}, \quad x=0,1,2\ldots$$ $$\mathbb{E}[X] = \lambda$$ $$\mathbb{V}[X] = \lambda$$
+A Poisson Distribution is defined as $X \sim \text{Poisson}(\lambda)$ with the probability: 
+
+$$
+\Pr(X=x) = \frac{e^{-\lambda} \lambda^x}{x!}, \quad x=0,1,2\ldots
+$$ 
+
+$$
+\mathbb{E}[X] = \lambda$$ $$\mathbb{V}[X] = \lambda
+$$
 
 ## Poisson Distribution - Example
 
-Assume the probability of an insurance claim on a particular policy during a year is Poisson distributed with $\lambda = \frac{1}{100}$. Calculate the probability that there will be no claims during the year: $$\Pr(X = 0) = e^{-\frac{1}{100}} \approx 0.99005$$
+Assume the probability of an insurance claim on a particular policy during a year is Poisson distributed with $\lambda = \frac{1}{100}$. Calculate the probability that there will be no claims during the year: 
+
+$$
+\Pr(X = 0) = e^{-\frac{1}{100}} \approx 0.99005
+$$
 
 ## Binomial Distribution
 
-A Binomial Distribution is described as $X \sim \text{Binomial}(n, p)$ and is used to determine the probability of exactly $x$ successes in $n$ independent trials: $$\Pr(X=x) = \binom{n}{x} p^x (1-p)^{n-x}, \quad x=0,1,2\ldots$$ $$\mathbb{E}[X] = np$$ $$\mathbb{V}[X] = np(1-p)$$
+A Binomial Distribution is described as $X \sim \text{Binomial}(n, p)$ and is used to determine the probability of exactly $x$ successes in $n$ independent trials: 
+
+$$
+\Pr(X=x) = \binom{n}{x} p^x (1-p)^{n-x}, \quad x=0,1,2\ldots
+$$ 
+
+$$
+\mathbb{E}[X] = np$$ $$\mathbb{V}[X] = np(1-p)
+$$
 
 ## Binomial Distribution - Example
 
-What is the probability that exactly 3 ones appear when 6 dice are thrown? $$X \sim \text{Binomial}(6, \frac{1}{6})$$ $$\Pr(X = 3) = \binom{6}{3} \left(\frac{1}{6}\right)^3 \left(\frac{5}{6}\right)^3$$
+What is the probability that exactly 3 ones appear when 6 dice are thrown? 
+
+$$
+X \sim \text{Binomial}(6, \frac{1}{6})
+$$ 
+
+$$
+\Pr(X = 3) = \binom{6}{3} \left(\frac{1}{6}\right)^3 \left(\frac{5}{6}\right)^3
+$$
 
 ## Exponential Distribution
 
@@ -260,8 +363,13 @@ F(x) = \begin{cases}
 \end{cases}
 $$
 
-$$\mathbb{E}[X] = \theta$$ 
-$$\mathbb{V}[X] = \theta^2$$
+$$
+\mathbb{E}[X] = \theta
+$$ 
+
+$$
+\mathbb{V}[X] = \theta^2
+$$
 
 ## Exponential Distribution - Example
 
@@ -296,6 +404,7 @@ $$
 $$
 \Phi[x] = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2} s^2} ds
 $$
+
 - If $X$ is a standard normal random variable, then:
 
 $$
