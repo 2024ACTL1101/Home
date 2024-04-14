@@ -107,11 +107,22 @@ A **random variable** $X$ is a function that assigns values to the possible outc
 ## Probability Mass Function (PMF)
 
 For a **discrete random variable** $X$, the PMF $p(x)$ is the probability that $X$ takes a particular value $x$:
-$$p(x) = \Pr(X = x),$$
+
+$$
+p(x) = \Pr(X = x),
+$$
+
 with
-$$p(x) \geq 0,$$
+
+$$
+p(x) \geq 0,
+$$
+
 and
-$$\sum_{\text{all } x} p(x) = 1.$$
+
+$$
+\sum_{\text{all } x} p(x) = 1.
+$$
 
 ## Probability Density Function (PDF)
 
