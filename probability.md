@@ -43,11 +43,11 @@ Where $A^{\\text{c}}$ means not $A$, $A \\cup B$ means $A$ or $B$, while $A \\ca
 
 If all outcomes of an experiment are equally likely, a useful formula to determine the probability of an event $A$ is given by:
 
-$$\\Pr[A] = \\frac{\\text{\\# favourable cases to } A}{\\text{\\# of total cases}}$$
+$$\\Pr[A] = \\frac{\\text{number of favourable cases to } A}{\\text{number of total cases}}$$
 
 Example: what is the probability of getting an odd number upon rolling a fair dice?
 
-$$\\frac{\\text{\\# favourable cases}}{\\text{\\# total cases}} = \\frac{3}{6} = \\frac{1}{2}.$$
+$$\\frac{\\text{number of favourable cases}}{\\text{number of total cases}} = \\frac{3}{6} = \\frac{1}{2}.$$
 
 ## Permutations & Combinations
 
