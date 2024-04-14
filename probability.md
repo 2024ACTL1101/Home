@@ -357,5 +357,16 @@ $$
 $$
 
 ## References
-- Textbook on Probability and Statistics
-- Articles and papers on actuarial applications of probability
+
+### Introduction Level
+- **Principles of Actuarial Science** by Michael Sherris, Cengage Learning, Paperback, 2010 Edition, APN: 9780170188210, ISBN: 0170188213. Chapters 2.2, 2.3. Ideal for those beginning their journey in actuarial studies.
+
+### Advanced Level
+- **A First Course in Probability** (Tenth Edition), 2019, by Sheldon M. Ross. Pearson. ISBN: 978-0134753119. This text covers Chapters 1-8 and is suited for in-depth study of advanced probability concepts.
+
+### Online Course
+- [Khan Academy Statistics and Probability Library](https://www.khanacademy.org/math/statistics-probability/probability-library), Units 7-10. A free and accessible resource for reinforcing probability concepts and practices.
+
+### ★ Ready to Tackle the SOA P Exam?
+- Embark on your journey to success in the actuarial field by preparing for the SOA Exam P with official resources. For a 3-hr practice exam, visit: [SOA Exam P - Probability](https://www.soa.org/education/exam-req/syllabus-study-materials/edu-exam-p-online-sample/).
+
