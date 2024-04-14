@@ -310,7 +310,11 @@ $$
 $$ 
 
 $$
-\mathbb{E}[X] = \lambda$$ $$\mathbb{V}[X] = \lambda
+\mathbb{E}[X] = \lambda
+$$ 
+
+$$
+\mathbb{V}[X] = \lambda
 $$
 
 ## Poisson Distribution - Example
