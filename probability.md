@@ -1,5 +1,5 @@
 
-# Introduction to Probability in Actuarial Studies
+# Introduction to Probability 
 
 ## Motivation
 
@@ -496,3 +496,4 @@ $$
 ### ★ Ready to Tackle the SOA P Exam?
 - Embark on your journey to success in the actuarial field by preparing for the SOA Exam P with official resources. For a 3-hr practice exam, visit: [SOA Exam P - Probability](https://www.soa.org/education/exam-req/syllabus-study-materials/edu-exam-p-online-sample/).
 
+## [Return Home](/)
