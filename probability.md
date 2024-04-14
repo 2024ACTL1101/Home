@@ -145,6 +145,7 @@ $$f(x) = \frac{d}{dx} F(x).$$
 
 The **expectation** (or **expected value**) of a random variable $X$, denoted $E[X]$ (and sometimes $\mu$), is the weighted average of all possible values $X$ can take, each value being weighted by the probability that $X$ assumes it. For discrete random variables:
 $$E[X] = \mu = \sum_{\text{all } x} x p(x)$$
+
 For continuous random variables:
 $$E[X] = \mu = \int_{-\infty}^{\infty} x f(x) dx$$
 
@@ -163,6 +164,7 @@ $$E[X^r] \text{ for } r=1,2,3,\ldots$$
 ## Law of Total Expectation
 
 For two random variables $X$ and $Y$, we have the so-called **Law of Total Expectation**:
+
 $$\mathbb{E}[X] = \mathbb{E}[\mathbb{E}[X|Y]].$$
 
 A consequence of this result is that for events $A_1, \ldots, A_n$ forming a partition of a sample space $\Omega$, we have:
