@@ -14,13 +14,20 @@
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],  // Correct usage
         displayMath: [['$$', '$$'], ['\\[', '\\]']], // Correct usage
-        processEscapes: true,
-        processEnvironments: true
         },
       svg: {
         fontCache: 'global'
       }
     };
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const mathElements = document.querySelectorAll('.MathJax, .mathjax, script[type="math/tex"]');
+      mathElements.forEach(function(element) {
+        element.innerHTML = element.innerHTML.replace(/\\_/g, '_'); // Replace escaped underscore with just underscore
+    });
+      MathJax.typesetPromise(); // Re-typeset to apply the changes
+    });
   </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
