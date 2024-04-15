@@ -1,3 +1,81 @@
+## Life Insurance Products
+
+There are many types of Life Insurance products (see Sherris Section 8.3), with the most common being:
+
+- **Whole of Life**: Pays a benefit at death, regardless of when death occurs.
+- **Term Insurance**: Pays a benefit at death, but only if death occurs in a certain period.
+- **Endowment**: Pays a benefit at death if death occurs in a certain period, but also pays the benefit if the life is alive at the end of the period.
+
+
+## Term Insurance - Claim Payments
+
+- $T(x)$ is the future lifetime (a continuous random variable) for a life $(x)$.
+- $X$ is the age-at-death (also a continuous random variable).
+  
+  $$
+  T(x) = X - x
+  $$
+  
+- Will require probability of this random variable taking values $0,1,\cdots,n-1$.
+  - $x+k$ age last birthday, with integer $x+k$.
+
+## Term Insurance - Benefit Payment
+
+Assume the insured life is aged $x$ at purchase, the death benefit is of amount $S$, and it is paid at the end of the year of death, but only if death occurs within $n$ years of purchase.
+Assume an annual (effective) rate of interest $i$.
+- If death occurs in the first year of the policy, when the life is aged $x$, then the present value of the death benefit would be:
+  
+  $$
+  \frac{S}{(1+i)} = Sv
+  $$
+  
+- If death occurs when the life is aged $x+1$ then the present value of the benefit would be:
+  
+  $$
+  \frac{S}{(1+i)^2} = Sv^2
+  $$
+
+## Term Insurance - Benefit Payment (Cont'd)
+
+In general, if death occurs when the life is aged $x+k$ last birthday where $k=0,1,2,\ldots n-1$ then the **present value of the benefit payment** at the end of the year of death would be:
+$$
+\text{PV[Payment]} = 
+\begin{cases}
+Sv^{k+1} & \text{for } k=0,1,2,\ldots, n-1 \\
+0 & \text{for } k \geq n
+\end{cases}
+$$
+
+## Term Insurance - EPV of Claim Payments
+
+What are the associated probabilities with the values of the present value of the payment?
+
+Let $K(x)$ be the discretized future lifetime random variable for age $x$ (i.e., $K(x) = \lfloor T(x) \rfloor$). Then:
+
+$$
+\text{PV}[Payment] = 
+\begin{cases}
+Sv^{k+1} 	& \text{with probability Pr} [K(x) = k] \\
+            & \text{for } k = 1,2,3,\ldots,n-1 \\
+0 & \text{with probability Pr} [K(x) \geq n] = ~_{n} p_x
+\end{cases}
+$$
+What is $\Pr[K(x) = k]$?
+
+$$ 
+\Pr[K=k]  = \Pr[k \leq T(x) < k+1]  = _{k|}q_{x} = {}_{k}p_{x}q_{x+k} 
+$$
+
+## Expected Present Value of Benefit Payment
+
+The **Expected Present Value** of the benefit payment for this term insurance is then:
+$$
+\sum_{k=0}^{n-1} S v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot \sum_{k=0}^{n-1} v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot \termins{x}{n}
+$$
+Where $\termins{x}{n}$ is standard actuarial notation (for the expected PV of a term life insurance paying a benefit of 1, and covering the next $n$ years of a life aged $x$).
+
+
+
 # Life Insurance Application - Case Study
 
 ### Background
