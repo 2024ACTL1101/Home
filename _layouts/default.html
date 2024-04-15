@@ -14,9 +14,8 @@
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],  // Correct usage
         displayMath: [['$$', '$$'], ['\\[', '\\]']], // Correct usage
-        macros: {
-        termins: ["{#1}{#2}", 2]  // Defines \termins{x}{n} to expand to something like x{n}
-        }
+        processEscapes: true,
+        processEnvironments: true
         },
       svg: {
         fontCache: 'global'
