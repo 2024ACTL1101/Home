@@ -75,6 +75,48 @@ $$
 
 Where $A_{x:\overline{n}\rvert}^{1}$ is standard actuarial notation (for the expected PV of a term life insurance paying a benefit of 1, and covering the next $n$ years of a life aged $x$).
 
+### Example 8.5
+
+Determine the expected present value of the claim payments for a 5-year term insurance on a life aged 20 with a sum insured of $100,000 using the following mortality probabilities and a 6% p.a. effective interest rate.
+
+#### Mortality Probabilities
+
+| Age  | $q_{\text{age}}$      |
+|------|----------------------|
+| 20   | 0.00192              |
+| 21   | 0.00181              |
+| 22   | 0.00160              |
+| 23   | 0.00138              |
+| 24   | 0.00118              |
+
+#### Solution
+
+To calculate the EPV of $1 payable on death within $n$ years:
+
+$$
+A_{20:\overline{5}|}^{1} = \sum_{k=0}^{4}v^{k+1}\left( _{k}p_{20}q_{20+k}\right)
+$$
+
+where:
+- \( v^{k+1} = \left( \frac{1}{1.06}\right)^{k+1} \)
+- \( _{k}p_{20} \) is assumed as follows, with \( _{0}p_{20}=1 \):
+
+#### Detailed Calculations
+
+| Age(x+k) | \( q_{x+k} \) | k    | \( v^{k+1} \) | \( _{k}p_{x} \) | \( _{k}p_{x} \cdot q_{x+k} \) |
+|----------|---------------|------|---------------|----------------|-------------------------------|
+| 20       | 0.00192       | 0    | 0.94340       | 1.00000        | 0.00192                       |
+| 21       | 0.00181       | 1    | 0.89000       | 0.99808        | 0.00181                       |
+| 22       | 0.00160       | 2    | 0.83962       | 0.99627        | 0.00159                       |
+| 23       | 0.00138       | 3    | 0.79209       | 0.99468        | 0.00137                       |
+| 24       | 0.00118       | 4    | 0.74726       | 0.99331        | 0.00117                       |
+
+**Total \( A_{20:\overline{5}|}^{1} \):** \( \alert{0.00672} \)
+
+The EPV of the claim payments for a sum insured of $100,000 is then:
+
+$$
+100000 \cdot A_{20:\overline{5}|}^{1} = 672.06
 
 
 # Life Insurance Application - Case Study
