@@ -9,29 +9,34 @@
 
 {% seo %}
     {% include head-custom.html %}
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    },
-    svg: {
-      fontCache: 'global'
+window.MathJax = {
+  startup: {
+    ready: () => {
+      MathJax.startup.defaultReady();
+      document.addEventListener("DOMContentLoaded", function() {
+        adjustMathJaxContent();
+      });
     }
-  };
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // Replaces escaped underscores within LaTeX formulas handled by MathJax
-    document.querySelectorAll('script[type^="math/tex"]').forEach(script => {
-      script.textContent = script.textContent.replace(/\\_/g, '_');
-    });
-    // Ask MathJax to re-typeset the page
-    MathJax.typesetPromise();
+  },
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+
+function adjustMathJaxContent() {
+  document.querySelectorAll('.MathJax, .mathjax, script[type="math/tex"]').forEach(el => {
+    el.textContent = el.textContent.replace(/\\_/g, '_');
   });
+  MathJax.typesetPromise();
+}
 </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
 
     
   </head>
