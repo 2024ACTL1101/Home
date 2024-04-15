@@ -23,6 +23,26 @@
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all pre > code blocks
+    document.querySelectorAll('pre code.language-math').forEach(function(block) {
+        // Get the text from the code block
+        let mathText = block.innerText;
+        // Create a new span element to hold the MathJax-rendered text
+        let mathSpan = document.createElement('span');
+        // Set the text to be rendered by MathJax
+        mathSpan.innerText = `$$${mathText}$$`;
+        // Replace the original code block with the new span
+        block.parentNode.replaceWith(mathSpan);
+    });
+
+    // Ask MathJax to typeset the new elements
+    if (window.MathJax) {
+        MathJax.typesetPromise();
+    }
+});
+</script>
 
 
 
