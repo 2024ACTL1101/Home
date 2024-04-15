@@ -62,7 +62,7 @@ $$
 What is $\Pr[K(x) = k]$?
 
 $$
-\Pr[K=k] = \Pr[k \leq T(x) < k+1] = {}_{k}p_{x}
+\Pr[K=k] = \Pr[k \leq T(x) < k+1] = _{k}p_{x}q_{x+k}
 $$
 
 ## Expected Present Value of Benefit Payment
