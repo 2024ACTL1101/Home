@@ -111,6 +111,7 @@ where:
 | 23       | 0.00138      | 3    | 0.79209   | 0.99468     | 0.00137                    |
 | 24       | 0.00118      | 4    | 0.74726   | 0.99331     | 0.00117                    |
 
+
 **Total $A_{20:\overline{5}|}^{1}$: $0.00672$**
 
 The EPV of the claim payments for a sum insured of $100,000 is then:
@@ -144,8 +145,9 @@ $$
 If the payments are restricted to $n$ payments maximum:
 
 $$
-\ddot{a}_{x:\lcroof{n}} = \sum_{k=0}^{n-1}v^k \cdot _{k}p_{x} = 1 + a_{x:\lcroof{n-1}}
+\ddot{a}_{x:\overline{n}|} = \sum_{k=0}^{n-1} v^k \cdot _{k}p_{x} = 1 + a_{x:\overline{n-1}|}
 $$
+
 
 
 
