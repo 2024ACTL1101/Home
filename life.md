@@ -91,19 +91,19 @@ Determine the expected present value of the claim payments for a 5-year term ins
 
 #### Solution
 
-To calculate the EPV of $1 payable on death within $n$ years:
+To calculate the EPV of 1 payable on death within $n$ years:
 
 $$
-A_{20:\overline{5}|}^{1} = \sum_{k=0}^{4}v^{k+1}\left( _{k}p_{20}q_{20+k}\right)
+A_{20:\overline{5}|}^{1} = \sum_{k=0}^{4}v^{k+1}\left( \_{k}p_{20}q_{20+k}\right)
 $$
 
 where:
 - $v^{k+1} = \left( \frac{1}{1.06}\right)^{k+1}$
-- $_{k}p_{20} \) is assumed as follows, with \( _{0}p_{20}=1$:
+- $\_{k}p_{20}$ is assumed as follows, with $\_{0}p_{20}=1$:
 
 #### Detailed Calculations
 
-| Age(x+k) | $q_{x+k}$    | $k$  | $v^{k+1}$ | $_{k}p_{x}$ | $_{k}p_{x} \cdot q_{x+k}$ |
+| Age(x+k) | $q_{x+k}$    | $k$  | $v^{k+1}$ | $\_{k}p_{x}$| $\_{k}p_{x} q_{x+k}$       |
 |----------|--------------|------|-----------|-------------|----------------------------|
 | 20       | 0.00192      | 0    | 0.94340   | 1.00000     | 0.00192                    |
 | 21       | 0.00181      | 1    | 0.89000   | 0.99808     | 0.00181                    |
@@ -111,8 +111,6 @@ where:
 | 23       | 0.00138      | 3    | 0.79209   | 0.99468     | 0.00137                    |
 | 24       | 0.00118      | 4    | 0.74726   | 0.99331     | 0.00117                    |
 
-
-**Total $A_{20:\overline{5}|}^{1}$: $0.00672$**
 
 The EPV of the claim payments for a sum insured of $100,000 is then:
 
@@ -127,8 +125,7 @@ $$
 - The Expected Present Value of a life annuity due (paid in advance) of $1 per period to this life aged $x$ is:
 
 $$
-\ddot{a}_{x} = \mathbb{E} \left[ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P_{\omega-x-1}) \right]
-= \sum_{k=0}^{\omega -x-1}v^k \cdot _{k}p_{x}
+\ddot{a}_{x} = \mathbb{E} \left[ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P_{\omega-x-1}) \right]= \sum_{k=0}^{\omega -x-1}v^k \cdot \_{k}p_{x}
 $$
 
 Furthermore:
