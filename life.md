@@ -125,16 +125,14 @@ $$
 - The Expected Present Value of a life annuity due (paid in advance) of $1 per period to this life aged $x$ is:
 
 $$
-\ddot{a}_{x} = \mathbb{E} \left[ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P_{\omega-x-1}) \right]= \sum_{k=0}^{\omega -x-1}v^k \cdot \_{k}p_{x}
+\ddot{a}\_{x} = \mathbb{E} [ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P\_{\omega-x-1})] = \sum\_{k=0}^{\omega-x-1}v^k \cdot \_{k}p_{x}
 $$
+
 
 Furthermore:
 
 $$
-\ddot{a}_{x} = 1 + \sum_{k=1}^{\omega -x-1}v^k \cdot _{k}p_{x}
-= 1 + \sum_{k=1}^{\omega -x-1}v \cdot v^{k-1} \cdot p_x \cdot _{k-1}p_{x+1}
-= 1+v \cdot p_{x} \left[ \sum_{k=0}^{\omega -x-2}v^k \cdot _{k}p_{x+1}\right]
-= 1+v \cdot p_{x} \cdot \ddot{a}_{x+1}
+\ddot{a}\_{x} = 1 + \sum\_{k=1}^{\omega -x-1} v^k \cdot \_{k}p_{x} = 1 + \sum\_{k=1}^{\omega -x-1} v \cdot v^{k-1} \cdot p_{x} \cdot \_{k-1}p_{x+1} = 1 + v \cdot p_{x} \left[ \sum\_{k=0}^{\omega -x-2} v^k \cdot \_{k}p_{x+1} \right] = 1 + v \cdot p_{x} \cdot \ddot{a}\_{x+1}
 $$
 
 - Note that $\ddot{a}_{x} = 1 + a_x.$ Do you see why?
@@ -142,7 +140,7 @@ $$
 If the payments are restricted to $n$ payments maximum:
 
 $$
-\ddot{a}_{x:\overline{n}|} = \sum_{k=0}^{n-1} v^k \cdot _{k}p_{x} = 1 + a_{x:\overline{n-1}|}
+\ddot{a}\_{x:\overline{n}|} = \sum\_{k=0}^{n-1} v^k \cdot \_{k}p_{x} = 1 + a\_{x:\overline{n-1}|}
 $$
 
 
