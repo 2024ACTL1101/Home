@@ -23,7 +23,7 @@
    - Use actuarial methods to calculate the necessary premium that covers the present value of future claims and expenses.
    - Implement recursive calculations to determine policy liability over the term.
 
-## Implementation Steps
+## Implementation Steps [To-Do]
 
 ### Extract and Analyze Mortality Data
 Begin by extracting age-specific mortality rates for the U.S. from the Human Mortality Database. Analyze these to understand mortality trends relevant to the age groups of interest, which will form the basis for pricing and risk assessment.
@@ -38,7 +38,7 @@ Begin by extracting age-specific mortality rates for the U.S. from the Human Mor
 - **Process Documentation**: Clearly document each step of the analysis in your markdown file, ensuring that all calculations are reproducible and transparent.
 - **Visualizations**: Include charts or graphs to visualize mortality trends and changes in the pricing structure across different age groups. This will help in illustrating the data-driven insights obtained from the analysis.
 
-## Discussion Questions
+## Discussion Questions [To-Do]
 
 1. **How would you approach setting a premium structure that balances both competitiveness in the market and profitability for the insurer?** Consider the role of actuarial fairness and market viability in your answer.
 2. **What factors should be considered to ensure that premiums are set at a fair rate while still appealing to potential customers?** Discuss how demographic data, mortality rates, and market trends might influence your strategy.
