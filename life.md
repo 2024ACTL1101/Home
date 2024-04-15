@@ -119,6 +119,35 @@ $$
 100,000 \cdot A_{20:\overline{5}|}^{1} = 672.06
 $$
 
+### Life Annuities
+
+- A **life annuity** is a stream of regular payments, paid as long as a life is alive.
+- Consider a life aged $x$. Call $P_k$ the payment they receive at time $k$, for $k=0,1,2,\ldots$
+- The Expected Present Value of a life annuity due (paid in advance) of $1 per period to this life aged $x$ is:
+
+$$
+\ddot{a}_{x} = \mathbb{E} \left[ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P_{\omega-x-1}) \right]
+= \sum_{k=0}^{\omega -x-1}v^k \cdot _{k}p_{x}
+$$
+
+Furthermore:
+
+$$
+\ddot{a}_{x} = 1 + \sum_{k=1}^{\omega -x-1}v^k \cdot _{k}p_{x}
+= 1 + \sum_{k=1}^{\omega -x-1}v \cdot v^{k-1} \cdot p_x \cdot _{k-1}p_{x+1}
+= 1+v \cdot p_{x} \left[ \sum_{k=0}^{\omega -x-2}v^k \cdot _{k}p_{x+1}\right]
+= 1+v \cdot p_{x} \cdot \ddot{a}_{x+1}
+$$
+
+- Note that $\ddot{a}_{x} = 1 + a_x.$ Do you see why?
+
+If the payments are restricted to $n$ payments maximum:
+
+$$
+\ddot{a}_{x:\lcroof{n}} = \sum_{k=0}^{n-1}v^k \cdot _{k}p_{x} = 1 + a_{x:\lcroof{n-1}}
+$$
+
+
 
 # Life Insurance Application - Case Study
 
