@@ -112,7 +112,7 @@ where:
 | 24       | 0.00118      | 4    | 0.74726   | 0.99331     | 0.00117                    |
 
 
-The EPV of the claim payments for a sum insured of $100,000 is then:
+The EPV of the claim payments for a sum insured of 100,000 is then:
 
 $$
 100,000 \cdot A_{20:\overline{5}|}^{1} = 672.06
@@ -122,7 +122,7 @@ $$
 
 - A **life annuity** is a stream of regular payments, paid as long as a life is alive.
 - Consider a life aged $x$. Call $P_k$ the payment they receive at time $k$, for $k=0,1,2,\ldots$
-- The Expected Present Value of a life annuity due (paid in advance) of $1 per period to this life aged $x$ is:
+- The Expected Present Value of a life annuity due (paid in advance) of 1 per period to this life aged $x$ is:
 
 $$
 \ddot{a}\_{x} = \mathbb{E} [ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P\_{\omega-x-1})] = \sum\_{k=0}^{\omega-x-1}v^k \cdot \_{k}p_{x}
