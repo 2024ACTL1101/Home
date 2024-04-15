@@ -62,7 +62,7 @@ $$
 What is $\Pr[K(x) = k]$?
 
 $$
-\Pr[K=k] = \Pr[k \leq T(x) < k+1]
+\Pr[K=k] = \Pr[k \leq T(x) < k+1] = {}_{k}p_{x}
 $$
 
 ## Expected Present Value of Benefit Payment
@@ -70,10 +70,10 @@ $$
 The **Expected Present Value** of the benefit payment for this term insurance is then:
 
 $$
-\sum_{k=0}^{n-1} S v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot \sum_{k=0}^{n-1} v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot \termins{x}{n}
+\sum_{k=0}^{n-1} S v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot \sum_{k=0}^{n-1} v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot A_{x:\overline{n}\rvert}^{1}
 $$
 
-Where $\termins{x}{n}$ is standard actuarial notation (for the expected PV of a term life insurance paying a benefit of 1, and covering the next $n$ years of a life aged $x$).
+Where $A_{x:\overline{n}\rvert}^{1}$ is standard actuarial notation (for the expected PV of a term life insurance paying a benefit of 1, and covering the next $n$ years of a life aged $x$).
 
 
 
