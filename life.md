@@ -62,7 +62,7 @@ $$
 What is $\Pr[K(x) = k]$?
 
 $$
-\Pr[K=k] = \Pr[k \leq T(x) < k+1] = _{k}p_{x}q_{x+k}
+\Pr[K=k] = \Pr[k \leq T(x) < k+1] = \_{k}p_{x}q_{x+k}
 $$
 
 ## Expected Present Value of Benefit Payment
@@ -70,7 +70,7 @@ $$
 The **Expected Present Value** of the benefit payment for this term insurance is then:
 
 $$
-\sum_{k=0}^{n-1} S v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot \sum_{k=0}^{n-1} v^{k+1}(_{k}p_{x}q_{x+k}) = S \cdot A_{x:\overline{n}\rvert}^{1}
+\sum_{k=0}^{n-1} S v^{k+1} \cdot \_{k}p_{x}q_{x+k} = S \cdot \sum_{k=0}^{n-1} v^{k+1} \cdot \_{k}p_{x}q_{x+k} = S \cdot A_{x:\overline{n}|}^{1}
 $$
 
 Where $A_{x:\overline{n}\rvert}^{1}$ is standard actuarial notation (for the expected PV of a term life insurance paying a benefit of 1, and covering the next $n$ years of a life aged $x$).
@@ -147,7 +147,6 @@ If the payments are restricted to $n$ payments maximum:
 $$
 \ddot{a}_{x:\overline{n}|} = \sum_{k=0}^{n-1} v^k \cdot _{k}p_{x} = 1 + a_{x:\overline{n-1}|}
 $$
-
 
 
 
