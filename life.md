@@ -61,17 +61,20 @@ $$
 
 What is $\Pr[K(x) = k]$?
 
-$$
-\Pr[K=k] = \Pr[k \leq T(x) < k+1] = \_{k}p_{x}q_{x+k}
-$$
+
+```math
+\Pr[K=k] = \Pr[k \leq T(x) < k+1] = _{k}p_{x}q_{x+k}
+```
+
+
 
 ## Expected Present Value of Benefit Payment
 
 The **Expected Present Value** of the benefit payment for this term insurance is then:
 
-$$
-\sum_{k=0}^{n-1} S v^{k+1} \cdot \_{k}p_{x}q_{x+k} = S \cdot \sum_{k=0}^{n-1} v^{k+1} \cdot \_{k}p_{x}q_{x+k} = S \cdot A_{x:\overline{n}|}^{1}
-$$
+```math
+\sum_{k=0}^{n-1} S v^{k+1} \cdot _{k}p_{x}q_{x+k} = S \cdot \sum_{k=0}^{n-1} v^{k+1} \cdot _{k}p_{x}q_{x+k} = S \cdot A_{x:\overline{n}|}^{1}
+```
 
 Where $A_{x:\overline{n}\rvert}^{1}$ is standard actuarial notation (for the expected PV of a term life insurance paying a benefit of 1, and covering the next $n$ years of a life aged $x$).
 
@@ -93,13 +96,13 @@ Determine the expected present value of the claim payments for a 5-year term ins
 
 To calculate the EPV of 1 payable on death within $n$ years:
 
-$$
-A_{20:\overline{5}|}^{1} = \sum_{k=0}^{4}v^{k+1}\left( \_{k}p_{20}q_{20+k}\right)
-$$
+```math
+A_{20:\overline{5}|}^{1} = \sum_{k=0}^{4}v^{k+1}\left( _{k}p_{20}q_{20+k}\right)
+```
 
 where:
 - $v^{k+1} = \left( \frac{1}{1.06}\right)^{k+1}$
-- $\_{k}p_{20}$ is assumed as follows, with $\_{0}p_{20}=1$:
+- $\_{k}p_{20}$ is assumed as follows, with $\_{0}p_{20}=1$
 
 #### Detailed Calculations
 
@@ -114,9 +117,9 @@ where:
 
 The EPV of the claim payments for a sum insured of 100,000 is then:
 
-$$
+```math
 100,000 \cdot A_{20:\overline{5}|}^{1} = 672.06
-$$
+```
 
 ### Life Annuities
 
@@ -124,24 +127,24 @@ $$
 - Consider a life aged $x$. Call $P_k$ the payment they receive at time $k$, for $k=0,1,2,\ldots$
 - The Expected Present Value of a life annuity due (paid in advance) of 1 per period to this life aged $x$ is:
 
-$$
-\ddot{a}\_{x} = \mathbb{E} [ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P\_{\omega-x-1})] = \sum\_{k=0}^{\omega-x-1}v^k \cdot \_{k}p_{x}
-$$
+```math
+\ddot{a}_{x} = \mathbb{E} [ \text{PV}(P_0) + \text{PV}(P_1) + \ldots + \text{PV}(P_{\omega-x-1})] = \sum_{k=0}^{\omega-x-1}v^k \cdot _{k}p_{x}
+```
 
 
 Furthermore:
 
-$$
-\ddot{a}\_{x} = 1 + \sum\_{k=1}^{\omega -x-1} v^k \cdot \_{k}p_{x} = 1 + \sum\_{k=1}^{\omega -x-1} v \cdot v^{k-1} \cdot p_{x} \cdot \_{k-1}p_{x+1} = 1 + v \cdot p_{x} \left[ \sum\_{k=0}^{\omega -x-2} v^k \cdot \_{k}p_{x+1} \right] = 1 + v \cdot p_{x} \cdot \ddot{a}\_{x+1}
-$$
+```math
+\ddot{a}_{x} = 1 + \sum_{k=1}^{\omega -x-1} v^k \cdot _{k}p_{x} = 1 + \sum_{k=1}^{\omega -x-1} v \cdot v^{k-1} \cdot p_{x} \cdot _{k-1}p_{x+1} = 1 + v \cdot p_{x} \left[ \sum_{k=0}^{\omega -x-2} v^k \cdot _{k}p_{x+1} \right] = 1 + v \cdot p_{x} \cdot \ddot{a}_{x+1}
+```
 
 - Note that $\ddot{a}_{x} = 1 + a_x.$ Do you see why?
 
 If the payments are restricted to $n$ payments maximum:
 
-$$
-\ddot{a}\_{x:\overline{n}|} = \sum\_{k=0}^{n-1} v^k \cdot \_{k}p_{x} = 1 + a\_{x:\overline{n-1}|}
-$$
+```math
+\ddot{a}_{x:\overline{n}|} = \sum_{k=0}^{n-1} v^k \cdot _{k}p_{x} = 1 + a_{x:\overline{n-1}|}
+```
 
 
 
