@@ -9,33 +9,18 @@
 
 {% seo %}
     {% include head-custom.html %}
-<script>
-window.MathJax = {
-  startup: {
-    ready: () => {
-      MathJax.startup.defaultReady();
-      document.addEventListener("DOMContentLoaded", function() {
-        adjustMathJaxContent();
-      });
-    }
-  },
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']],
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
 
-function adjustMathJaxContent() {
-  document.querySelectorAll('.MathJax, .mathjax, script[type="math/tex"]').forEach(el => {
-    el.textContent = el.textContent.replace(/\\_/g, '_');
-  });
-  MathJax.typesetPromise();
-}
+<script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],  // Correct usage
+        displayMath: [['$$', '$$'], ['\\[', '\\]']] // Correct usage
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 
 
     
