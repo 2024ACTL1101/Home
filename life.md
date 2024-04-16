@@ -160,7 +160,7 @@ If the payments are restricted to $n$ payments maximum:
 P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{x:\overline{n}|}
 ```
 
-Note: premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
+- Note: premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}\|}$
 
 - Present value of the premium due at age $x+k$ is:
 
@@ -175,11 +175,11 @@ Pv^{k} & \text{for } k=0,1,2,\ldots n-1 \\
 
 ## Recurrence Relations
 
-Recurrence relations for the expected present value of benefits for an $n$ year term insurance on a life aged $x$. Let $\_{t}B_{x:\overline{n}|}$ be the expected present value of benefits at age $x+t$:
+Recurrence relations for the expected present value of benefits for an $n$ year term insurance on a life aged $x$. Let $\_{t}B_{x:\overline{n}\|}$ be the expected present value of benefits at age $x+t$:
 
 If the life dies during the year, with probability $q_{x+t}$, then the benefit of $S$ is paid at the end of the year. The expected present value of the benefits will then be equal to $S$ since no future payments are made once the life has died.
 
-If the life survives to the end of the year, with probability $p_{x+t}$, then the expected present value of the benefits will equal that for a life aged $x+t+1$, this is just $\_{t+1}B\_{x:\overline{n}|}$.
+- If the life survives to the end of the year, with probability $p_{x+t}$, then the expected present value of the benefits will equal that for a life aged $x+t+1$, this is just $\_{t+1}B\_{x:\overline{n}\|}$.
 
 
 - EPV at the start of the year - divide the end of year value by $1+i$:
@@ -190,7 +190,7 @@ _{t}B_{x:\overline{n}|} = \frac{q_{x+t}S + p_{x+t} \left( _{t+1}B_{x:\overline{n
 
 - For the $n$ year term insurance on a life aged $x$, at age $x+n$ the expected value of the benefit will be zero since the benefit is only paid up to age $x+n$.
 
-At $t=n$ we have $\_{n}B_{x:\overline{n}|}=0$.
+- At $t=n$ we have $\_{n}B_{x:\overline{n}\|}=0$.
 
 Over the final year of the policy:
 
@@ -320,14 +320,16 @@ The recurrence formula:
 ```
 
 Summarized in the following table:
-| **Age** | **k** | **$q_x$** |**$\_{k}V_{x:\overline{n}|}$**|
-|---------|-------|-----------|------------------------------|
-| 20      | 0     | 0.00192   | 0.00                         |
-| 21      | 1     | 0.00181   | -443.68                      |
-| 22      | 2     | 0.00160   | -372.80                      |
-| 23      | 3     | 0.00138   | -276.43                      |
-| 24      | 4     | 0.00118   | -152.05                      |
-| 25      | 5     | --        | 0.00                         |
+
+| **Age** | **k** | **$q_x$** | **$\_{k}V_{x:\overline{n}\|}$** |
+|---------|-------|-----------|-------------------------------|
+| 20      | 0     | 0.00192   | 0.00                          |
+| 21      | 1     | 0.00181   | -443.68                       |
+| 22      | 2     | 0.00160   | -372.80                       |
+| 23      | 3     | 0.00138   | -276.43                       |
+| 24      | 4     | 0.00118   | -152.05                       |
+| 25      | 5     | --        | 0.00                          |
+
 
 ### Sign of the Reserves
 
