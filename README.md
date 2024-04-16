@@ -12,12 +12,8 @@ _"Tell me and I forget. Teach me and I remember. Involve me and I learn" - Benja
 
 # Actuarial Exam Pathways Comparison
 
-
 This table provides a detailed comparison of the subjects and exam codes between the Institute and Faculty of Actuaries (IFOA) and the Society of Actuaries (SOA).
 
-# IFOA and SOA Exam Equivalencies
-
-This table provides a detailed comparison of the subjects and exam codes between the Institute and Faculty of Actuaries (IFOA) and the Society of Actuaries (SOA).
 
 | IFOA Code | IFOA Subject                             | SOA Code         | SOA Subject                                                                                           |
 |-----------|------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------|
