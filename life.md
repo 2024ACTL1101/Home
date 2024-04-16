@@ -1,4 +1,4 @@
-## Life Insurance Products
+## Life Insurance and Life Annuity
 
 There are many types of Life Insurance products (see Sherris Section 8.3), with the most common being:
 
