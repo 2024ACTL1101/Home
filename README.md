@@ -24,9 +24,6 @@ This table provides a detailed comparison of the subjects and exam codes between
 | CB1       | Finance                                  | VEE Acc/Fin      | VEE Accounting and Finance                                                                            |
 | CB2       | Economics                                | VEE Econ         | VEE Economics                                                                                         |
 | CB3       | Management                               | VEE Acc/Fin      | VEE Accounting and Finance                                                                            |
-| CP1       | Actuarial Practice                       | FAP              | Fundamentals of Actuarial Practice                                                                    |
-| CP2       | Modelling Practice                       | PA and ATPA      | Predictive Analytics and Advanced Topics in Predictive Analytics Assessment                           |
-| CP3       | Communications                           | FAP              | Fundamentals of Actuarial Practice                                                                    |
 
 ## Notes:
 - **VEE** (Validation by Educational Experience) subjects require specific college-level coursework.
