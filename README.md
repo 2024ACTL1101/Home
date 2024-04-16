@@ -27,7 +27,6 @@ This table provides a detailed comparison of the subjects and exam codes between
 
 ## Notes:
 - **VEE** (Validation by Educational Experience) subjects require specific college-level coursework.
-- **FAP** (Fundamentals of Actuarial Practice)
 - **PA** (Predictive Analytics) focus on developing practical skills and analytical techniques needed for predictive modeling in actuarial practices.
 - **AL(S)TAM** (Advanced Long or Short-Term Actuarial Mathematics) covers detailed aspects of either long-term or short-term actuarial mathematics.
 
