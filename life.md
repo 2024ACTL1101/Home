@@ -339,6 +339,22 @@ Summarized in the following table:
 - In general, the magnitude of expenses is small enough that reserves are positive.
 
 
+### Case Study
 
+For a practical application of these principles, visit the following link to explore a detailed case study on life insurance applications. This case study provides insights into real-world scenarios and demonstrates the implementation of actuarial principles in solving complex problems.
+
+- [Case Study on Life Insurance Applications](lifeapp.md)
+
+This case study is designed to enrich your understanding by connecting theoretical knowledge with its practical usage. We recommend this for learners at all levels who wish to see how actuarial science is applied in contemporary settings.
+
+
+
+## References
+
+### Introduction Level
+- **Principles of Actuarial Science** by Michael Sherris. 2010 Edition. Publisher: Cengage Learning. ISBN: 0170188213, APN: 9780170188210. Coverage includes Chapter 8. Ideal for those beginning their journey in actuarial studies.
+
+### Advanced Level
+- **Actuarial Mathematics for Life Contingent Risks** by Dickson, C.M.D., Hardy, M.R., Waters, H.R. 2020 Edition. Publisher: Cambridge University Press. ISBN: 978-1-108-47808-3. Covers Chapters 1-8, focusing on deep actuarial methods and applications.
 
 
