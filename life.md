@@ -160,7 +160,7 @@ If the payments are restricted to $n$ payments maximum:
 P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{x:\overline{n}|}
 ```
 
-- Note: premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
+Note: premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
 
 - Present value of the premium due at age $x+k$ is:
 
@@ -175,10 +175,11 @@ Pv^{k} & \text{for } k=0,1,2,\ldots n-1 \\
 
 ## Recurrence Relations
 
-- Recurrence relations for the expected present value of benefits for an $n$ year term insurance on a life aged $x$
-  - Let $\_{t}B_{x:\overline{n}|}$ be the expected present value of benefits at age $x+t$:
-    - If the life dies during the year, with probability $q_{x+t}$, then the benefit of $S$ is paid at the end of the year. The expected present value of the benefits will then be equal to $S$ since no future payments are made once the life has died.
-    - If the life survives to the end of the year, with probability $p_{x+t}$, then the expected present value of the benefits will equal that for a life aged $x+t+1$, this is just $\_{t+1}B\_{x:\overline{n}|}$.
+Recurrence relations for the expected present value of benefits for an $n$ year term insurance on a life aged $x$. Let $\_{t}B_{x:\overline{n}|}$ be the expected present value of benefits at age $x+t$:
+
+If the life dies during the year, with probability $q_{x+t}$, then the benefit of $S$ is paid at the end of the year. The expected present value of the benefits will then be equal to $S$ since no future payments are made once the life has died.
+
+If the life survives to the end of the year, with probability $p_{x+t}$, then the expected present value of the benefits will equal that for a life aged $x+t+1$, this is just $\_{t+1}B\_{x:\overline{n}|}$.
 
 
 - EPV at the start of the year - divide the end of year value by $1+i$:
@@ -189,9 +190,9 @@ _{t}B_{x:\overline{n}|} = \frac{q_{x+t}S + p_{x+t} \left( _{t+1}B_{x:\overline{n
 
 - For the $n$ year term insurance on a life aged $x$, at age $x+n$ the expected value of the benefit will be zero since the benefit is only paid up to age $x+n$.
 
+At $t=n$ we have $\_{n}B_{x:\overline{n}|}=0$.
 
-- At $t=n$ we have $\_{n}B_{x:\overline{n}|}=0$.
-- Over the final year of the policy:
+Over the final year of the policy:
 
 ```math
 _{n-1}B_{x:\overline{n}|} = \frac{q_{x+n-1}S + p_{x+n-1} \cdot 0}{1+i} = \frac{q_{x+n-1}S}{1+i}
@@ -211,7 +212,7 @@ _{0}B_{x:\overline{n}|} = \frac{q_{x}S + p_{x} \left( _{1}B_{x:\overline{n}|} \r
 
 ### Example 8.6 & 8.7
 
-Use the Principle of Equivalence to determine the annual premium for a 5-year term insurance on a 20-year-old male with a sum insured of \$100,000 using the following mortality probabilities and a 6% p.a. effective interest rate. Initial expenses are 0.5% of the sum insured and renewal expenses are \$100 per premium payment.
+Use the Principle of Equivalence to determine the annual premium for a 5-year term insurance on a 20-year-old male with a sum insured of 100,000 using the following mortality probabilities and a 6% p.a. effective interest rate. Initial expenses are 0.5% of the sum insured and renewal expenses are 100 per premium payment.
 
 | **age** | **$q_{\text{age}}$** |
 |---------|----------------------|
@@ -229,7 +230,8 @@ Use the Principle of Equivalence to determine the annual premium for a 5-year te
 a_{20:\overline{5}|} = \sum_{k=0}^{n-1} v^k \left( _{k}p_{20} \right)
 ```
 
-| **age(x+k)** | **$q_{x+k}$** | **k** | **$v^k$** | **$\_{k}p_x$** |
+
+| **age(x+k)** | **$q_{x+k}$** | **k** | **$v^k$** |**$\_{k}p_x$**|
 |--------------|---------------|-------|-----------|--------------|
 | 20           | 0.00192       | 0     | 1.00000   | 1.00000      |
 | 21           | 0.00181       | 1     | 0.94340   | 0.99808      |
@@ -267,11 +269,13 @@ P = \frac{672.06 + 945.02}{4.45021} = 363.37.
 
 Policy value of a liability for a life insurance policy is the
 
-\alert{\text{EPV of future claims and expenses} - \text{EPV of future premiums}}.
-$$
+```math
+\text{EPV of future claims and expenses} - \text{EPV of future premiums}.
+```
+
 See this video: [https://youtu.be/Ncueph9iTZg](https://youtu.be/Ncueph9iTZg)
 
-Denote the value of this \alert{reserve} by $\_{t}V_{x:\overline{n}|}$ the EPV of the policy liability 
+Denote the value of this reserve by $\_{t}V_{x:\overline{n}|}$ the EPV of the policy liability 
 - at age $x+t$ (CONDITIONAL on survival to age $x+t$)
 - for the term insurance on a life aged $x$ for a term of $n$ years 
 - with sum insured payable at the end of the year of death
@@ -280,7 +284,7 @@ Denote the value of this \alert{reserve} by $\_{t}V_{x:\overline{n}|}$ the EPV o
 
 We have:
 ```math
-{}_{t}V_{x:\overline{n}|} = S \cdot \termins{x+t}{n-t} - (P-E) \cdot \anndue{x+t}{n-t}
+{}_{t}V_{x:\overline{n}|} = S \cdot {}_{t+1} A^1_{x+t:\overline{n-t}|} - (P-E) \cdot \ddot{a}_{x+t:\overline{n-t}|}
 ```
 (by definition)
 
@@ -316,8 +320,7 @@ The recurrence formula:
 ```
 
 Summarized in the following table:
-
-| **Age** | **k** | **$q_x$** | **$\_{k}V_{x:\overline{n}|}$** |
+| **Age** | **k** | **$q_x$** |**$\_{k}V_{x:\overline{n}|}$**|
 |---------|-------|-----------|------------------------------|
 | 20      | 0     | 0.00192   | 0.00                         |
 | 21      | 1     | 0.00181   | -443.68                      |
