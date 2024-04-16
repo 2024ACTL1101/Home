@@ -17,10 +17,10 @@ This table provides a detailed comparison of the subjects and exam codes between
 
 | IFOA Code | IFOA Subject                             | SOA Code         | SOA Subject                                                                                           |
 |-----------|------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------|
-| CS1       | Actuarial Statistics                     | P and VEE MS     | Probability and VEE Mathematical Statistics                                                           |
-| CS2       | Risk Modelling and Survival Analysis     | SRM and PA       | Statistics for Risk Modeling and Predictive Analytics                                                 |
+| CS1       | Actuarial Statistics                     | P, VEE MS and PA | Probability, VEE Mathematical Statistics and Predictive Analytics                                     |
+| CS2       | Risk Modelling and Survival Analysis     | SRM and FAM      | Statistics for Risk Modeling and Fundamentals of Actuarial Math                                       |
 | CM1       | Actuarial Mathematics                    | FAM and AL(S)TAM  | Fundamentals of Actuarial Math and Advanced Long-Term or Short-Term Actuarial Mathematics            |
-| CM2       | Economic Modelling                       | FM               | Financial Math                                                                                        |
+| CM2       | Economic Modelling                       | FM and FAM       | Financial Math and Fundamentals of Actuarial Math                                                     |
 | CB1       | Finance                                  | VEE Acc/Fin      | VEE Accounting and Finance                                                                            |
 | CB2       | Economics                                | VEE Econ         | VEE Economics                                                                                         |
 | CB3       | Management                               | VEE Acc/Fin      | VEE Accounting and Finance                                                                            |
