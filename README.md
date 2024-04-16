@@ -14,16 +14,27 @@ _"Tell me and I forget. Teach me and I remember. Involve me and I learn" - Benja
 
 This table provides a detailed comparison of the subjects and exam codes between the Institute and Faculty of Actuaries (IFOA) and the Society of Actuaries (SOA).
 
+| IFOA Code | IFOA Subject                             | SOA Code         |
+|-----------|------------------------------------------|------------------|
+| CS1       | Actuarial Statistics                     | P, VEE MS        |
+| CS2       | Risk Modelling and Survival Analysis     | SRM, FAM         |
+| CM1       | Actuarial Mathematics                    | FAM, AL(S)TAM    |
+| CM2       | Economic Modelling                       | FAM, VEE Acc/Fin |
+| CB1       | Finance                                  | VEE Acc/Fin      |
+| CB2       | Economics                                | VEE Econ         |
+| CB3       | Management                               | VEE Acc/Fin      |
+                                                                      
 
-| IFOA Code | IFOA Subject                             | SOA Code         | SOA Subject                                                                                           |
-|-----------|------------------------------------------|------------------|-------------------------------------------------------------------------------------------------------|
-| CS1       | Actuarial Statistics                     | P, VEE MS and PA | Probability, VEE Mathematical Statistics and Predictive Analytics                                     |
-| CS2       | Risk Modelling and Survival Analysis     | SRM and FAM      | Statistics for Risk Modeling and Fundamentals of Actuarial Math                                       |
-| CM1       | Actuarial Mathematics                    | FAM and AL(S)TAM  | Fundamentals of Actuarial Math and Advanced Long-Term or Short-Term Actuarial Mathematics            |
-| CM2       | Economic Modelling                       | FM and FAM       | Financial Math and Fundamentals of Actuarial Math                                                     |
-| CB1       | Finance                                  | VEE Acc/Fin      | VEE Accounting and Finance                                                                            |
-| CB2       | Economics                                | VEE Econ         | VEE Economics                                                                                         |
-| CB3       | Management                               | VEE Acc/Fin      | VEE Accounting and Finance                                                                            |
+| SOA Code | SOA Subject                                 | IFOA Code         |
+|----------|---------------------------------------------|-------------------|
+| P        | Probability                                 | CS1               |
+| FM       | Financial Math                              | CM1               |
+| FAM      | Fundamentals of Actuarial Math              | CM1, CM2, CS2     |
+| SRM      | Statistics for Risk Modeling                | CS2               |
+| PA       | Predictive Analytics                        | CS2               |
+| ALTAM    | Advanced Long-Term Actuarial Math           | CM1               |
+| ASTAM    | Advanced Short-Term Actuarial Math          | CS1, CS2          |
+
 
 
 ## Notes:
