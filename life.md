@@ -339,7 +339,8 @@ Summarized in the following table:
 - In general, the magnitude of expenses is small enough that reserves are positive.
 
 
-### Case Study
+
+## Case Study
 
 For a practical application of these principles, visit the following link to explore a detailed case study on life insurance applications. This case study provides insights into real-world scenarios and demonstrates the implementation of actuarial principles in solving complex problems.
 
