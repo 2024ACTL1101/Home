@@ -25,6 +25,7 @@ This table provides a detailed comparison of the subjects and exam codes between
 | CB2       | Economics                                | VEE Econ         | VEE Economics                                                                                         |
 | CB3       | Management                               | VEE Acc/Fin      | VEE Accounting and Finance                                                                            |
 
+
 ## Notes:
 - **VEE** (Validation by Educational Experience) subjects require specific college-level coursework.
 - **PA** (Predictive Analytics) focus on developing practical skills and analytical techniques needed for predictive modeling in actuarial practices.
