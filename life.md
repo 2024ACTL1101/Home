@@ -273,8 +273,6 @@ Policy value of a liability for a life insurance policy is the
 \text{EPV of future claims and expenses} - \text{EPV of future premiums}.
 ```
 
-See this video: [https://youtu.be/Ncueph9iTZg](https://youtu.be/Ncueph9iTZg)
-
 Denote the value of this reserve by $\_{t}V_{x:\overline{n}|}$ the EPV of the policy liability 
 - at age $x+t$ (CONDITIONAL on survival to age $x+t$)
 - for the term insurance on a life aged $x$ for a term of $n$ years 
@@ -300,7 +298,7 @@ Note that we must have:
 
 ### Example 8.10
 
-An insurance company sells 5 year term insurances on 20 year old males with a sum insured of \$100,000 for a premium of \$363.37. Assume the following mortality probabilities, a 6% p.a. effective interest rate, initial expenses of 0.5% of the sum insured and renewal expenses of \$100 per premium payment.
+An insurance company sells 5 year term insurances on 20 year old males with a sum insured of 100,000 for a premium of 363.37. Assume the following mortality probabilities, a 6% p.a. effective interest rate, initial expenses of 0.5% of the sum insured and renewal expenses of 100 per premium payment.
 
 | **Age** | **$q_{x}$** |
 |---------|-------------|
