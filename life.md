@@ -150,9 +150,9 @@ If the payments are restricted to $n$ payments maximum:
 
 - The `actuarially fair' **Principle of Equivalence** states that:
   
-$$
+```math
 \text{EPV of premiums} = \text{EPV of claims} + \text{EPV of expenses}
-$$
+```
 
 - A complication in Life Insurance is that annual premiums $P$ are only paid while a life is alive, so that the expected present value of $n$ premiums $P$, for a life age $x$, is:
 
@@ -160,7 +160,7 @@ $$
 P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{x:\overline{n}|}
 ```
 
-- **Note:** premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
+- Note: premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
 
 - Present value of the premium due at age $x+k$ is:
 
@@ -266,12 +266,12 @@ P = \frac{672.06 + 945.02}{4.45021} = 363.37.
 ### Valuation of Policy Liabilities
 
 Policy value of a liability for a life insurance policy is the
-$$
+
 \alert{\text{EPV of future claims and expenses} - \text{EPV of future premiums}}.
 $$
 See this video: [https://youtu.be/Ncueph9iTZg](https://youtu.be/Ncueph9iTZg)
 
-Denote the value of this \alert{reserve} by $${}_{t}V_{x:\overline{n}|}$$ the EPV of the policy liability 
+Denote the value of this \alert{reserve} by $\_{t}V_{x:\overline{n}|}$ the EPV of the policy liability 
 - at age $x+t$ (CONDITIONAL on survival to age $x+t$)
 - for the term insurance on a life aged $x$ for a term of $n$ years 
 - with sum insured payable at the end of the year of death
@@ -279,20 +279,20 @@ Denote the value of this \alert{reserve} by $${}_{t}V_{x:\overline{n}|}$$ the EP
 ### Term life insurance
 
 We have:
-$$
+```math
 {}_{t}V_{x:\overline{n}|} = S \cdot \termins{x+t}{n-t} - (P-E) \cdot \anndue{x+t}{n-t}
-$$
+```
 (by definition)
 
-$$
+```math
 = v \left[ q_{x+t} \cdot S + p_{x+t} \cdot {}_{t+1}V_{x:\overline{n}|} \right] -(P-E)
-$$
+```
 (noting that there are only two possible outcomes over the next year)
 
 Note that we must have:
-$$
+```math
 {}_{0}V_{x:\overline{n}|} = {}_{n}V_{x:\overline{n}|} = 0.
-$$
+```
 
 ### Example 8.10
 
@@ -311,13 +311,13 @@ Determine the expected value of the policy liability for this term insurance as 
 ### Solution
 
 The recurrence formula:
-$$
+```math
 {}_{t}V_{x:\overline{n}|} = \frac{q_{x+t} S + p_{x+t} \left[ {}_{t+1}V_{x:\overline{n}|} \right]}{(1+i)} - (P-E)
-$$
+```
 
 Summarized in the following table:
 
-| **Age** | **k** | **$q_x$** | **$_{k}V_{x:\overline{n}|}$** |
+| **Age** | **k** | **$q_x$** | **$\_{k}V_{x:\overline{n}|}$** |
 |---------|-------|-----------|------------------------------|
 | 20      | 0     | 0.00192   | 0.00                         |
 | 21      | 1     | 0.00181   | -443.68                      |
