@@ -146,6 +146,32 @@ If the payments are restricted to $n$ payments maximum:
 \ddot{a}_{x:\overline{n}|} = \sum_{k=0}^{n-1} v^k \cdot _{k}p_{x} = 1 + a_{x:\overline{n-1}|}
 ```
 
+### Principle of Equivalence
+
+- The `actuarially fair' **Principle of Equivalence** states that:
+  
+$$
+\text{EPV of premiums} = \text{EPV of claims} + \text{EPV of expenses}
+$$
+
+- A complication in Life Insurance is that annual premiums $P$ are only paid while a life is alive, so that the expected present value of $n$ premiums $P$, for a life age $x$, is:
+
+```math
+  P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{\overline{x:n}|}
+```
+
+  **Note:** premium payments are always made at the beginning of the cover, hence $a\_{\overline{x:n}|}$
+
+- Present value of the premium due at age $x+k$ is:
+
+```math
+\begin{cases}
+Pv^{k} & \text{for } k=0,1,2,\ldots n-1 \\
+0 & \text{for } k\geq n
+\end{cases}
+```
+
+- For a life aged $x$, the probability that they will be alive at age $x+k$ and will pay the premium $\_{k}p_{x}$
 
 
 
