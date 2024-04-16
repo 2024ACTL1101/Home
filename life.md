@@ -157,10 +157,10 @@ $$
 - A complication in Life Insurance is that annual premiums $P$ are only paid while a life is alive, so that the expected present value of $n$ premiums $P$, for a life age $x$, is:
 
 ```math
-  P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{\overline{x:n}|}
+  P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{x:\overline{n}|}
 ```
 
-  **Note:** premium payments are always made at the beginning of the cover, hence $a\_{\overline{x:n}|}$
+  **Note:** premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
 
 - Present value of the premium due at age $x+k$ is:
 
@@ -172,6 +172,95 @@ Pv^{k} & \text{for } k=0,1,2,\ldots n-1 \\
 ```
 
 - For a life aged $x$, the probability that they will be alive at age $x+k$ and will pay the premium $\_{k}p_{x}$
+
+### Recurrence Relations
+
+- Recurrence relations for the expected present value of benefits for an $n$ year term insurance on a life aged $x$
+  - Let $\_{t}B_{x:\overline{n}|}$ be the expected present value of benefits at age $x+t$:
+    - If the life dies during the year, with probability $q_{x+t}$, then the benefit of $S$ is paid at the end of the year. The expected present value of the benefits will then be equal to $S$ since no future payments are made once the life has died.
+    - If the life survives to the end of the year, with probability $p_{x+t}$, then the expected present value of the benefits will equal that for a life aged $x+t+1$, this is just $\_{t+1}B\_{x:\overline{n}|}$.
+
+
+- EPV at the start of the year - divide the end of year value by $1+i$:
+
+```math
+_{t}B_{x:\overline{n}|} = \frac{q_{x+t}S + p_{x+t} \left( _{t+1}B_{x:\overline{n}|} \right)}{1+i}
+```
+
+- For the $n$ year term insurance on a life aged $x$, at age $x+n$ the expected value of the benefit will be zero since the benefit is only paid up to age $x+n$.
+
+
+- At $t=n$ we have $\_{n}B_{x:\overline{n}|}=0$.
+- Over the final year of the policy:
+
+```math
+_{n-1}B_{x:\overline{n}|} = \frac{q_{x+n-1}S + p_{x+n-1} \cdot 0}{1+i} = \frac{q_{x+n-1}S}{1+i}
+```
+
+- Repeating the recurrence:
+
+```math
+_{n-2}B_{x:\overline{n}|} = \frac{q_{x+n-2}S + p_{x+n-2} \frac{q_{x+n-1}S}{1+i}}{1+i} = q_{x+n-2} \frac{S}{1+i} + p_{x+n-2} q_{x+n-1} \frac{S}{(1+i)^{2}}
+```
+
+- At age $x$ we have:
+
+```math
+_{0}B_{x:\overline{n}|} = \frac{q_{x}S + p_{x} \left( _{1}B_{x:\overline{n}|} \right)}{1+i} = S \sum_{k=0}^{n-1} v^k \left( _{k}p_{x} q_{x+k} \right)
+```
+
+### Example 8.6 & 8.7
+
+Use the Principle of Equivalence to determine the annual premium for a 5-year term insurance on a 20-year-old male with a sum insured of \$100,000 using the following mortality probabilities and a 6% p.a. effective interest rate. Initial expenses are 0.5% of the sum insured and renewal expenses are \$100 per premium payment.
+
+| **age** | **$q_{\text{age}}$** |
+|---------|----------------------|
+| 20      | 0.00192              |
+| 21      | 0.00181              |
+| 22      | 0.00160              |
+| 23      | 0.00138              |
+| 24      | 0.00118              |
+
+### Solution
+
+- We must find the EPV of premiums, so we must find:
+
+```math
+a_{20:\overline{5}|} = \sum_{k=0}^{n-1} v^k \left( _{k}p_{20} \right)
+```
+
+| **age(x+k)** | **$q_{x+k}$** | **k** | **$v^k$** | **$\_{k}p_x$** |
+|--------------|---------------|-------|-----------|--------------|
+| 20           | 0.00192       | 0     | 1.00000   | 1.00000      |
+| 21           | 0.00181       | 1     | 0.94340   | 0.99808      |
+| 22           | 0.00160       | 2     | 0.89000   | 0.99627      |
+| 23           | 0.00138       | 3     | 0.83962   | 0.99468      |
+| 24           | 0.00118       | 4     | 0.79209   | 0.99331      |
+      
+
+1. Let $P$ denote the annual premium. EPV is:
+
+```math
+P a_{20:\overline{5}|} = P \times 4.45021.
+```
+
+2. EPV of the claims payment is:
+
+```math
+100000 a_{20:\overline{5}|} = 100000 \times 0.0067206 = 672.06.
+```
+
+3. Expected present value of the sum of initial and renewal expenses is:
+
+```math
+0.005 \times 100000 + 100 a_{20:\overline{5}|} = 500 + 100 \times 4.45021 = 945.02.
+```
+
+- Equating [1] = [2] + [3] (principle of equivalence):
+
+```math
+P = \frac{672.06 + 945.02}{4.45021} = 363.37.
+```
 
 
 
