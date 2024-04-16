@@ -157,10 +157,10 @@ $$
 - A complication in Life Insurance is that annual premiums $P$ are only paid while a life is alive, so that the expected present value of $n$ premiums $P$, for a life age $x$, is:
 
 ```math
-  P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{x:\overline{n}|}
+P \cdot \sum_{k=0}^{n-1} v^{k} \left( _{k}p_{x} \right) = P \cdot a_{x:\overline{n}|}
 ```
 
-  **Note:** premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
+- **Note:** premium payments are always made at the beginning of the cover, hence $a\_{x:\overline{n}|}$
 
 - Present value of the premium due at age $x+k$ is:
 
@@ -173,7 +173,7 @@ Pv^{k} & \text{for } k=0,1,2,\ldots n-1 \\
 
 - For a life aged $x$, the probability that they will be alive at age $x+k$ and will pay the premium $\_{k}p_{x}$
 
-### Recurrence Relations
+## Recurrence Relations
 
 - Recurrence relations for the expected present value of benefits for an $n$ year term insurance on a life aged $x$
   - Let $\_{t}B_{x:\overline{n}|}$ be the expected present value of benefits at age $x+t$:
@@ -261,6 +261,79 @@ P a_{20:\overline{5}|} = P \times 4.45021.
 ```math
 P = \frac{672.06 + 945.02}{4.45021} = 363.37.
 ```
+
+
+### Valuation of Policy Liabilities
+
+Policy value of a liability for a life insurance policy is the
+$$
+\alert{\text{EPV of future claims and expenses} - \text{EPV of future premiums}}.
+$$
+See this video: [https://youtu.be/Ncueph9iTZg](https://youtu.be/Ncueph9iTZg)
+
+Denote the value of this \alert{reserve} by $${}_{t}V_{x:\overline{n}|}$$ the EPV of the policy liability 
+- at age $x+t$ (CONDITIONAL on survival to age $x+t$)
+- for the term insurance on a life aged $x$ for a term of $n$ years 
+- with sum insured payable at the end of the year of death
+
+### Term life insurance
+
+We have:
+$$
+{}_{t}V_{x:\overline{n}|} = S \cdot \termins{x+t}{n-t} - (P-E) \cdot \anndue{x+t}{n-t}
+$$
+(by definition)
+
+$$
+= v \left[ q_{x+t} \cdot S + p_{x+t} \cdot {}_{t+1}V_{x:\overline{n}|} \right] -(P-E)
+$$
+(noting that there are only two possible outcomes over the next year)
+
+Note that we must have:
+$$
+{}_{0}V_{x:\overline{n}|} = {}_{n}V_{x:\overline{n}|} = 0.
+$$
+
+### Example 8.10
+
+An insurance company sells 5 year term insurances on 20 year old males with a sum insured of \$100,000 for a premium of \$363.37. Assume the following mortality probabilities, a 6% p.a. effective interest rate, initial expenses of 0.5% of the sum insured and renewal expenses of \$100 per premium payment.
+
+| **Age** | **$q_{x}$** |
+|---------|-------------|
+| 20      | 0.00192     |
+| 21      | 0.00181     |
+| 22      | 0.00160     |
+| 23      | 0.00138     |
+| 24      | 0.00118     |
+
+Determine the expected value of the policy liability for this term insurance as at the end of each year for the five years of the policy term using a recursive formula.
+
+### Solution
+
+The recurrence formula:
+$$
+{}_{t}V_{x:\overline{n}|} = \frac{q_{x+t} S + p_{x+t} \left[ {}_{t+1}V_{x:\overline{n}|} \right]}{(1+i)} - (P-E)
+$$
+
+Summarized in the following table:
+
+| **Age** | **k** | **$q_x$** | **$_{k}V_{x:\overline{n}|}$** |
+|---------|-------|-----------|------------------------------|
+| 20      | 0     | 0.00192   | 0.00                         |
+| 21      | 1     | 0.00181   | -443.68                      |
+| 22      | 2     | 0.00160   | -372.80                      |
+| 23      | 3     | 0.00138   | -276.43                      |
+| 24      | 4     | 0.00118   | -152.05                      |
+| 25      | 5     | --        | 0.00                         |
+
+### Sign of the Reserves
+
+- In the example, the expected value of the policy liability is **negative**!
+  - The liability is effectively an **asset** for the life insurance company (How? Why?)
+    - Since initial expenses are effectively loaned to the policyholder, this is like an asset that is repaid from the premium - this makes a policy look like an asset in the early years.
+    - Also the probability of death is **decreasing** over this age range - level premiums are **less than** the expected cost of death cover in the early years.
+- Example 8.8 has positive reserves for low expenses.
+- In general, the magnitude of expenses is small enough that reserves are positive.
 
 
 
