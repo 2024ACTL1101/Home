@@ -47,3 +47,4 @@ This mapping provides a comprehensive view for aspiring actuaries on how to leve
 * [Probability](probability.md)
 * [Financial Mathematics](financial_math.md)
 * [Life Insurance](life.md)
+* [Statistical Machine Learning](statsml.md)
