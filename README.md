@@ -7,7 +7,7 @@ _"Tell me and I forget. Teach me and I remember. Involve me and I learn" - Benja
 
 
 ---
-![Quest Guide](quest.jpg)
+![Quest Guide](quest.png)
 
 
 # Actuarial Exam Pathways Comparison
