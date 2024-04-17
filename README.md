@@ -46,5 +46,6 @@ This table provides a detailed comparison of the subjects and exam codes between
 This mapping provides a comprehensive view for aspiring actuaries on how to leverage their studies to meet the examination and qualification requirements of both IFOA and SOA.
 * [Probability](probability.md)
 * [Financial Mathematics](financial_math.md)
+* ...
 * [Life Insurance](life.md)
 * [Statistical Machine Learning](statsml.md)
