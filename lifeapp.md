@@ -1,5 +1,7 @@
 # Life Insurance Application - Interactive Case Study
 
+![Life Insurance](life.jpg)
+
 ## Background
 
 **LifeSecure Insurance** is venturing into new territory with their latest product aimed at the U.S. market. This innovative term life insurance product covers a wide demographic, from newborns to centenarians, for a 5-year term. Given the dynamic shifts in demographics, healthcare advancements, and economic fluctuations, crafting a competitively priced yet financially sound product is paramount.
