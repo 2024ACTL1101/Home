@@ -16,4 +16,6 @@ navigation:
     url: /financial_math.md
   - title: Life Insurance
     url: /life.md
+ - title: Statistical Machine Learning and AI
+    url: /statsml.md
 
