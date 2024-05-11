@@ -52,7 +52,7 @@ Historically, actuaries developed the application of the mathematics of finance 
 
 ### Time Certain Annuity
 
-A **time certain annuity** is a stream of level payments, happening at regular intervals. Assuming a constant interest rate, the symbol $$a_{\overline{n}|$$ represents the Present Value (PV) of $n$ payments of 1, payable in arrears (at the end of each period).
+A **time certain annuity** is a stream of level payments, happening at regular intervals. Assuming a constant interest rate, the symbol $a\_{\overline{n}\|}$ represents the Present Value (PV) of $n$ payments of 1, payable in arrears (at the end of each period).
 
 ### Annuity Due - Payments in Advance
 
@@ -67,27 +67,28 @@ Understanding the time value of money is essential in evaluating the present val
 The relationship between a current or present value (PV) and future value (FV) of a cash flow, given a discount rate \(r\) per period and \(t\) compounding periods, is defined as:
 
 - **Future Value:**
-$$
+```math
 FV_t = PV \times (1 + r)^t
-$$
+```
 
 - **Present Value:**
-$$
+```math
 PV = \frac{FV_t}{(1 + r)^t}
-$$
+```
 
 When compounding continuously:
 - **Future Value with Continuous Compounding:**
-  \[ FV_t = PV \times e^{rt} \]
-
+```math
+FV_t = PV \times e^{rt}
+```
 - **Present Value with Continuous Compounding:**
-  \[ PV_t = FV \times e^{-rt} \]
+```math
+PV_t = FV \times e^{-rt}
+```
 
 ## Fixed-Income Instruments
 
-# Fixed-Income Instruments
-
-## Types of Fixed-Income Instruments
+### Types of Fixed-Income Instruments
 
 Fixed-income instruments can be categorized into three main types:
 
