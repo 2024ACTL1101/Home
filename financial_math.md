@@ -43,15 +43,16 @@ Historically, actuaries developed the application of the mathematics of finance 
 - The `continuously compounded interest rate` is the nominal interest rate obtained when the compounding frequency is increased to infinity.
 - Known as the **force of interest**, with the mathematical constant $e$ discovered by Jacob Bernoulli in 1683.
 - For an annual effective rate of 10% p.a., the continuously compounded interest rate is approximately 9.530%, calculated as:
-  ```math
-  \delta = \ln[1 + j] = \ln[1.1] = 0.09531
-  ```
+  
+```math
+\delta = \ln[1 + j] = \ln[1.1] = 0.09531
+```
 
 ## Annuities and Actuarial Notation
 
 ### Time Certain Annuity
 
-A **time certain annuity** is a stream of level payments, happening at regular intervals. Assuming a constant interest rate, the symbol $a_{\lcroof{n}}$ represents the Present Value (PV) of $n$ payments of 1, payable in arrears (at the end of each period).
+A **time certain annuity** is a stream of level payments, happening at regular intervals. Assuming a constant interest rate, the symbol $$a_{\overline{n}|$$ represents the Present Value (PV) of $n$ payments of 1, payable in arrears (at the end of each period).
 
 ### Annuity Due - Payments in Advance
 
@@ -102,12 +103,15 @@ Fixed-income instruments can be categorized into three main types:
 
 The relationship between a current or present value (PV) and future value (FV) of a cash flow, given a discount rate \( r \) per period and \( t \) compounding periods, can be defined by the following equations:
 
-- **Future Value**:  
-  \[ FV_t = PV \cdot (1 + r)^t \]
+- **Future Value**:
+```math
+FV_t = PV \cdot (1 + r)^t \]
+```
 
-- **Present Value**:  
+- **Present Value**:
+```math
   \[ PV = \frac{FV_t}{(1 + r)^t} \]
-
+```
 ### Continuous Compounding
 
 When compounding is continuous, the formulas are modified as follows:
@@ -127,7 +131,9 @@ When compounding is continuous, the formulas are modified as follows:
 
 Pricing a coupon bond extends the single cash flow calculation for a discount bond to a general formula for calculating a bond's price (PV) given the market discount rate on a coupon date:
 
-\[ PV_{\text{Coupon Bond}} = \frac{PMT_1}{(1 + r)^1} + \frac{PMT_2}{(1 + r)^2} + \ldots + \frac{PMT_N + FV_N}{(1 + r)^N} \]
+```math
+PV_{\text{Coupon Bond}} = \frac{PMT_1}{(1 + r)^1} + \frac{PMT_2}{(1 + r)^2} + \ldots + \frac{PMT_N + FV_N}{(1 + r)^N}
+```
 
 This formula accounts for all periodic payments (PMT) and the final payment of the principal (FVN) at maturity.
 
