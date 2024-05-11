@@ -53,8 +53,7 @@ A **time certain annuity** is a stream of level payments, happening at regular i
 
 ### Annuity Due - Payments in Advance
 
-For annuity due, where payments are made in advance, the Present Value is represented by $\ddot{a}_{\lcroof{n}}$, and calculated as:
-$$\ddot{a}_{\lcroof{n}} = (1 + i) \cdot a_{\lcroof{n}}$$
+
 
 ## Time Value of Money in Fixed Income and Equity
 
