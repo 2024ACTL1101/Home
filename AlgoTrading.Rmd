@@ -1,0 +1,14 @@
+---
+title: "Algorithmic Trading with AMD Stock"
+output: html_document
+---
+
+## Background
+
+You work at a well-established trading firm and have been tasked with demonstrating the capabilities of algorithmic trading to your Board of Directors. Your assignment is to develop a simple trading algorithm using R.
+
+## Data Loading
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(ggplot2)
