@@ -135,12 +135,12 @@ FV_t = PV \times e^{rt}
 PV_t = FV \times e^{-rt}
 ```
 
-## Coupon Bond Cash Flow Diagram
+### Coupon Bond Cash Flow Diagram
 
 ![Coupon Bond Cash Flow Diagram](couponbond.png)  
 *Figure: Coupon Bond cash flow diagram.*
 
-## Pricing a Coupon Bond
+### Pricing a Coupon Bond
 
 Pricing a coupon bond extends the single cash flow calculation for a discount bond to a general formula for calculating a bond's price (PV) given the market discount rate on a coupon date:
 
@@ -150,21 +150,21 @@ PV_{\text{Coupon Bond}} = \frac{PMT_1}{(1 + r)^1} + \frac{PMT_2}{(1 + r)^2} + \l
 
 This formula accounts for all periodic payments (PMT) and the final payment of the principal (FVN) at maturity.
 
-## Republic of India Semiannual Coupon Bond - Overview
+### Republic of India Semiannual Coupon Bond - Overview
 
-### Bond Details
+#### Bond Details
 
 - **Duration**: 20 years
 - **Coupon Rate**: 6.70% (Annualized)
 - **Yield to Maturity (YTM)**: 6.70%
 - **Payment Frequency**: Semiannual
 
-### Coupon Payments
+#### Coupon Payments
 
 - **Semiannual Payment (PMT)**: INR3.35 $(= 6.70/2)$
 - **Periodic Discount Rate**: 3.35\% $(= 6.70/2)$
 
-## Pricing Calculation
+### Pricing Calculation
 
 **Pricing at Issuance**:
 
@@ -181,7 +181,7 @@ PV = \frac{3.35}{1.0335} + \frac{3.35}{1.0335^2} + \ldots + \frac{103.35}{1.0335
 - Since the coupon rate equals the YTM, the present value (PV) of the bond at issuance is expected to be INR100.
 - This calculation assumes that each coupon payment and the final principal are discounted back to their present value using the semiannual discount rate.
 
-## Perpetual Bonds
+### Perpetual Bonds
 
 A perpetual bond is a type of coupon bond with no stated maturity date, providing continuous cash flows indefinitely:
 
@@ -191,13 +191,13 @@ PV_{\text{Perpetual Bond}} = \frac{PMT}{r}
 
 This formula simplifies the present value calculation for perpetual bonds, assuming the rate $r$ is positive.
 
-## Annuity Instruments: Mortgage Example
+### Annuity Instruments: Mortgage Example
 
 Fixed-income instruments with level payments, such as mortgages, combine interest and principal cash flows throughout their duration.
 
 ![Mortgage Cash Flow Diagram](mortgagecf.png)
 
-## Calculating Annuity Cash Flows
+### Calculating Annuity Cash Flows
 
 The periodic annuity cash flow (PMT), occurring at the end of each period, can be calculated using the formula:
 
@@ -219,7 +219,7 @@ Where:
 - $i$ is the interest rate per period $(= r)$
 - $n$ is the total number of payment periods $(= t)$
 
-## Example: Mortgage Cash Flows
+### Example: Mortgage Cash Flows
 
 An investor seeks a fixed-rate 30-year mortgage loan to finance 80% of the purchase price of USD 1,000,000 for a residential building.
 
@@ -233,7 +233,7 @@ An investor seeks a fixed-rate 30-year mortgage loan to finance 80% of the purch
 PMT = \text{USD } 4,417.63 = \frac{0.4375\% \times USD 800,000}{1 - (1 + 0.4375\%)^{-360}}
 ```
 
-### Interest and Principal Breakdown
+#### Interest and Principal Breakdown
 
 **Month 1**:
 - Interest: USD 3,500 = USD 800,000 $\times$ 0.4375\%
