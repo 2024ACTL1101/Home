@@ -137,7 +137,7 @@ PV_t = FV \times e^{-rt}
 
 ## Coupon Bond Cash Flow Diagram
 
-![Coupon Bond Cash Flow Diagram](/path/to/couponbond.png)  
+![Coupon Bond Cash Flow Diagram](couponbond.png)  
 *Figure: Coupon Bond cash flow diagram.*
 
 ## Pricing a Coupon Bond
@@ -195,7 +195,7 @@ This formula simplifies the present value calculation for perpetual bonds, assum
 
 Fixed-income instruments with level payments, such as mortgages, combine interest and principal cash flows throughout their duration.
 
-![Mortgage Cash Flow Diagram](/path/to/mortgagecf.png)
+![Mortgage Cash Flow Diagram](mortgagecf.png)
 
 ## Calculating Annuity Cash Flows
 
