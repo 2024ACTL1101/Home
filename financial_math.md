@@ -53,14 +53,63 @@ Historically, actuaries developed the application of the mathematics of finance 
 ### Time Certain Annuity
 
 A **time certain annuity** is a stream of level payments, happening at regular intervals. Assuming a constant interest rate, the symbol $a\_{\overline{n}\|}$ represents the Present Value (PV) of $n$ payments of 1, payable in arrears (at the end of each period).
+- Let $i$ be the interest rate effective per period.
+
+The computation of $a_{\overline{n}\|}$ can be expressed as:
+```math
+a_{\overline{n}|} = \sum_{j=1}^{n}\left(\frac{1}{1+i}\right)^j
+= \frac{1}{1+i} \left[\frac{1-\left(\frac{1}{1+i}\right)^n}{1-\left(\frac{1}{1+i}\right)}\right]
+= \frac{1-\left(\frac{1}{1+i}\right)^n}{i}
+= \frac{1-v^n}{i}, \text{where } v \equiv \frac{1}{1+i}
+```
+### Time Certain Annuity - Example
+
+**Example 4.7:** Calculate $a_{\overline{n}\|}$ at an interest rate of $i = 0.01$ per period.
+
+**Solution:**
+```math
+a_{\overline{n}|} = \frac{1-v^n}{i}
+= \frac{1-\left(\frac{1}{1.01}\right)^{10}}{0.01}
+= 9.4713
+```
 
 ### Annuity Due - Payments in Advance
+- Actuarial notation: place "double-dots" over the annuity symbol to indicate \(n\) payments made **in advance**: $\ddot{a}_{\overline{n}\|}$.
+- This symbol  then represents the Present Value of $n$ payments of 1, if the first payment is made immediately:
+  
+```math
+\ddot{a}_{\overline{n}|} = \sum_{j=0}^{n-1}(\frac{1}{1+i})^j
+```
 
+The relationship between $a_{\overline{n}\|}$ and $\ddot{a}_{\overline{n}\|}$ can be defined as:
+```math
+\ddot{a}_{\overline{n}|}  = \left[\frac{1-\left(\frac{1}{1+i}\right)^n}{1-\left(\frac{1}{1+i}\right)}\right]
+= (1+i) \left[\frac{1-\left(\frac{1}{1+i}\right)^n}{i}\right]
+= (1+i) a_{\overline{n}|}
+```
+But did we really need those calculations?
 
+### Annuity Due - Example
 
-## Time Value of Money in Fixed Income and Equity
+**Example 4.8:** Calculate the present value of a 5 year annuity due at 6% per annum.
 
-Understanding the time value of money is essential in evaluating the present value (PV) of fixed-income and equity instruments based on expected future cash flows. The principle that cash inflows are valued more highly the sooner they are received is fundamental in financial analysis.
+**Solution:**
+```math
+\ddot{a}_{\overline{n}|} = (1.06) \left[\frac{1-\left(\frac{1}{1.06}\right)^5}{0.06}\right]
+= 4.4651
+```
+
+## Fixed-Income Instruments
+
+### Types of Fixed-Income Instruments
+
+Fixed-income instruments can be categorized into three main types:
+
+- **Discount Instruments**: Examples include zero-coupon bonds.
+- **Periodic Interest Instruments**: Examples include regular coupon bonds.
+- **Level Payment Instruments**: Examples include mortgages.
+
+> Source: CFA Level 1 Curriculum 2024: Quantitative Methods
 
 ### Time Value of Money Principles
 
@@ -85,43 +134,6 @@ FV_t = PV \times e^{rt}
 ```math
 PV_t = FV \times e^{-rt}
 ```
-
-## Fixed-Income Instruments
-
-### Types of Fixed-Income Instruments
-
-Fixed-income instruments can be categorized into three main types:
-
-- **Discount Instruments**: Examples include zero-coupon bonds.
-- **Periodic Interest Instruments**: Examples include regular coupon bonds.
-- **Level Payment Instruments**: Examples include mortgages.
-
-> Source: CFA Level 1 Curriculum 2024: Quantitative Methods
-
-## Time Value of Money
-
-### Discrete Compounding
-
-The relationship between a current or present value (PV) and future value (FV) of a cash flow, given a discount rate \( r \) per period and \( t \) compounding periods, can be defined by the following equations:
-
-- **Future Value**:
-```math
-FV_t = PV \cdot (1 + r)^t \]
-```
-
-- **Present Value**:
-```math
-  \[ PV = \frac{FV_t}{(1 + r)^t} \]
-```
-### Continuous Compounding
-
-When compounding is continuous, the formulas are modified as follows:
-
-- **Future Value with Continuous Compounding**:  
-  \[ FV_t = PV \cdot e^{rt} \]
-
-- **Present Value with Continuous Compounding**:  
-  \[ PV_t = FV \cdot e^{-rt} \]
 
 ## Coupon Bond Cash Flow Diagram
 
@@ -149,8 +161,8 @@ This formula accounts for all periodic payments (PMT) and the final payment of t
 
 ### Coupon Payments
 
-- **Semiannual Payment (PMT)**: INR3.35 \((= 6.70\% / 2)\)
-- **Periodic Discount Rate**: 3.35\% \((= 6.70\% / 2)\)
+- **Semiannual Payment (PMT)**: INR3.35 $(= 6.70/2)$
+- **Periodic Discount Rate**: 3.35\% $(= 6.70/2)$
 
 ## Pricing Calculation
 
@@ -160,7 +172,9 @@ This formula accounts for all periodic payments (PMT) and the final payment of t
 
 **Present Value Calculation**:
 
-\[ PV = \frac{3.35}{1.0335} + \frac{3.35}{1.0335^2} + \ldots + \frac{103.35}{1.0335^{40}} \]
+```math
+PV = \frac{3.35}{1.0335} + \frac{3.35}{1.0335^2} + \ldots + \frac{103.35}{1.0335^{40}}
+```
 
 **Explanation**:
 
@@ -171,9 +185,11 @@ This formula accounts for all periodic payments (PMT) and the final payment of t
 
 A perpetual bond is a type of coupon bond with no stated maturity date, providing continuous cash flows indefinitely:
 
-\[ PV_{\text{Perpetual Bond}} = \frac{PMT}{r} \]
+```math
+PV_{\text{Perpetual Bond}} = \frac{PMT}{r}
+```
 
-This formula simplifies the present value calculation for perpetual bonds, assuming the rate \( r \) is positive.
+This formula simplifies the present value calculation for perpetual bonds, assuming the rate $r$ is positive.
 
 ## Annuity Instruments: Mortgage Example
 
@@ -185,7 +201,9 @@ Fixed-income instruments with level payments, such as mortgages, combine interes
 
 The periodic annuity cash flow (PMT), occurring at the end of each period, can be calculated using the formula:
 
-\[ PMT = \frac{PV \cdot r}{1 - (1 + r)^{-t}} \]
+```math
+PMT = \frac{PV \cdot r}{1 - (1 + r)^{-t}}
+```
 
 Where:
 - **PMT**: periodic cash flow
@@ -194,10 +212,12 @@ Where:
 - **t**: number of payment periods
 
 Using Actuarial Notations:
-\[ \frac{PV}{PMT} = a_{\lcroof{n}} \]
+```math
+\frac{PV}{PMT} =  a_{\overline{n}|}
+```
 Where:
-- \(i\) is the interest rate per period (= \(r\))
-- \(n\) is the total number of payment periods (= \(t\))
+- $i$ is the interest rate per period $(= r)$
+- $n$ is the total number of payment periods $(= t)$
 
 ## Example: Mortgage Cash Flows
 
@@ -205,21 +225,23 @@ An investor seeks a fixed-rate 30-year mortgage loan to finance 80% of the purch
 
 **Calculate the investor's monthly payment**:
 - Annual mortgage rate: 5.25%
-- Monthly rate (\(r\)): \(0.4375\% = \frac{5.25\%}{12}\)
-- Number of payments (\(t\)): 360
-- Principal Value (\(PV\)): USD 800,000 = 80% \(\times\) USD 1,000,000
+- Monthly rate $r$: $0.4375 = \frac{5.25}{12}$
+- Number of payments $t$: 360
+- Principal Value $PV$: $USD 800,000 = 0.8 \times USD 1,000,000$
 
-\[ PMT = \text{USD } 4,417.63 = \frac{0.4375\% \times USD 800,000}{1 - (1 + 0.4375\%)^{-360}} \]
+```math
+PMT = \text{USD } 4,417.63 = \frac{0.4375\% \times USD 800,000}{1 - (1 + 0.4375\%)^{-360}}
+```
 
 ### Interest and Principal Breakdown
 
 **Month 1**:
-- Interest: USD 3,500 = USD 800,000 \(\times\) 0.4375\%
+- Interest: USD 3,500 = USD 800,000 $\times$ 0.4375\%
 - Principal Amortization: USD 917.63 = USD 4,417.63 - USD 3,500
 - Remaining Principal: USD 799,082.37 = USD 800,000 - USD 917.63
 
 **Month 2**:
-- Interest: USD 3,495.99 = USD 799,082.37 \(\times\) 0.4375\%
+- Interest: USD 3,495.99 = USD 799,082.37 $\times$ 0.4375\%
 - Principal Amortization: USD 921.64 = USD 4,417.63 - USD 3,495.99
 - Remaining Principal: USD 798,160.73 = USD 799,082.37 - USD 921.64
 
