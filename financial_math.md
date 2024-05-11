@@ -26,12 +26,6 @@ Historically, actuaries developed the application of the mathematics of finance 
    - Repayments of interest (coupons) and face value on maturity
    - Includes government bonds, corporate bonds
 
-### Terminology
-
-- **Principal** (not principle) - Amount of the loan or investment
-- **Maturity** - Repayable at a future specified date (the maturity date of the loan)
-- **Repayments** - Repayments of capital and interest, typically level repayments as in an annuity or interest-only as in a government bond
-
 ## Compound Interest
 
 "Money makes money. And the money that money makes, makes money." - Benjamin Franklin
@@ -42,7 +36,7 @@ Historically, actuaries developed the application of the mathematics of finance 
 
 - **Nominal Interest Rate** - Interest rates are normally **QUOTED** as per annum percentage nominal rates.
 - **Effective Interest Rate per Period** - Let $j^{(m)}$ denote the per annum nominal interest rate with $m$ periods. The effective interest rate per period is calculated as:
-  $$r = \frac{j^{(m)}}{m}$$
+  $r = \frac{j^{(m)}}{m}$
 
 ### Continuous Compounding
 
@@ -61,3 +55,77 @@ A **time certain annuity** is a stream of level payments, happening at regular i
 
 For annuity due, where payments are made in advance, the Present Value is represented by $\ddot{a}_{\lcroof{n}}$, and calculated as:
 $$\ddot{a}_{\lcroof{n}} = (1 + i) \cdot a_{\lcroof{n}}$$
+
+## Time Value of Money in Fixed Income and Equity
+
+Understanding the time value of money is essential in evaluating the present value (PV) of fixed-income and equity instruments based on expected future cash flows. The principle that cash inflows are valued more highly the sooner they are received is fundamental in financial analysis.
+
+### Time Value of Money Principles
+
+The relationship between a current or present value (PV) and future value (FV) of a cash flow, given a discount rate \(r\) per period and \(t\) compounding periods, is defined as:
+
+- **Future Value:**
+$$
+FV_t = PV \times (1 + r)^t
+$$
+
+- **Present Value:**
+$$
+PV = \frac{FV_t}{(1 + r)^t}
+$$
+
+When compounding continuously:
+- **Future Value with Continuous Compounding:**
+  \[ FV_t = PV \times e^{rt} \]
+
+- **Present Value with Continuous Compounding:**
+  \[ PV_t = FV \times e^{-rt} \]
+
+## Fixed-Income Instruments
+
+Fixed-income instruments include debt securities like bonds or loans. These instruments can exhibit different cash flow patterns:
+
+### Discount Instruments
+
+For a discount instrument, an investor pays a price (PV) today and receives the full principal amount (FV) at maturity without receiving periodic interest payments. This type is often called a zero-coupon bond.
+
+**Example:**
+- **Investment:** Purchase of a discount bond with a principal of INR 100, due in 20 years.
+- **Market Discount Rate:** 6.70%
+- **Calculation:**
+  \[ PV = \frac{INR 100}{(1 + 0.067)^{20}} = INR 27.33 \]
+
+### Periodic Interest Instruments
+
+These involve paying a price (PV) for a bond or loan and receiving periodic interest payments (PMT) across the life of the instrument, with the final interest payment and the principal paid at maturity.
+
+### Level Payment Instruments
+
+Instruments like mortgages where an investor pays an initial price (PV) and receives uniform cash flows (PMT) at predetermined intervals through maturity which represent both interest and principal repayment.
+
+## Equity Instruments
+
+Equity investments such as stocks involve ownership shares in a company and entitle investors to receive discretionary cash flows in the form of dividends.
+
+### Valuation Models
+
+#### Constant Dividends
+
+If dividends are constant:
+\[ PV = \frac{D}{r} \]
+
+#### Growing Dividends
+
+If dividends grow at a constant rate \(g\):
+\[ PV = \frac{D \times (1 + g)}{r - g} \]
+
+**Example:**
+- **Scenario:** A stock pays a starting dividend of GBP 1.50 expected to grow at 6% per year indefinitely.
+- **Required Rate of Return:** 15%
+- **Calculation:**
+  \[ PV = \frac{GBP 1.50 \times (1 + 0.06)}{0.15 - 0.06} = GBP 17.67 \]
+
+### Application in Practical Scenarios
+
+These principles allow investors and financial analysts to evaluate and compare the value of different investment opportunities, taking into account the timing of cash flows and the associated risks due to time and uncertainty.
+
