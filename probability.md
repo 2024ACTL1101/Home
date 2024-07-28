@@ -490,10 +490,4 @@ $$
 ### Advanced Level
 - **A First Course in Probability** (Tenth Edition), 2019, by Sheldon M. Ross. Pearson. ISBN: 978-0134753119. This text covers Chapters 1-8 and is suited for in-depth study of advanced probability concepts.
 
-### Online Course
-- [Khan Academy Statistics and Probability Library](https://www.khanacademy.org/math/statistics-probability/probability-library), Units 7-10. A free and accessible resource for reinforcing probability concepts and practices.
-
-### ★ Ready to Tackle the SOA P Exam?
-- Embark on your journey to success in the actuarial field by preparing for the SOA Exam P with official resources. For a 3-hr practice exam, visit: [SOA Exam P - Probability](https://www.soa.org/education/exam-req/syllabus-study-materials/edu-exam-p-online-sample/).
-
 ## [Return Home](https://2024actl1101.github.io/Home/)
