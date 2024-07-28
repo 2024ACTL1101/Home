@@ -1,3 +1,4 @@
+
 # Risk and Insurance
 
 ## Introduction and Motivation
@@ -39,40 +40,40 @@ The principles of risk and insurance are not just theoretical; they are **applie
 
 ### Expected Value and Variability
 
-- **Expected Value ($\E[X]$)** - The average outcome of a random variable $X$ over many trials.
-- **Variance ($\Var[X]$)** - A measure of how much the outcomes of $X$ deviate from the expected value.
+- **Expected Value (E[X])** - The average outcome of a random variable X over many trials.
+- **Variance (Var[X])** - A measure of how much the outcomes of X deviate from the expected value.
 
 ### Example: Investment Choices
 
 You have a choice of investing $10,000 in two potential investments:
-
-\begin{tabular}{cccc}
-\toprule
-Outcome & Probability & Investment A & Investment B \\
-\midrule
-Good & $\frac{1}{10}$ & 50,000 & 26,000 \\
-Middle & $\frac{22}{25}$ & 12,500 & 15,000 \\
-Bad & $\frac{1}{50}$ & 0 & 10,000 \\
-\bottomrule
-\end{tabular}
+| Outcome | Probability  | Investment A | Investment B |
+|---------|--------------|--------------|--------------|
+| Good    | $\frac{1}{10}$ | 50,000       | 26,000       |
+| Middle  | $\frac{22}{25}$| 12,500       | 15,000       |
+| Bad     | $\frac{1}{50}$ | 0            | 10,000       |
 
 #### Solution
 
 - Expected values:
-\[
-\E\left[ A\right] =\frac{1}{10}50,000+\frac{22}{25}12,500+\frac{1}{50}0 = 16,000
-\]
-\[
-\E\left[ B\right] =\frac{1}{10}26,000+\frac{22}{25}15,000+\frac{1}{50}10,000 = 16,000
-\]
+  
+$$
+E[A] = \frac{1}{10} \cdot 50,000 + \frac{22}{25} \cdot 12,500 + \frac{1}{50} \cdot 0 = 16,000
+$$
+
+$$
+E[B] = \frac{1}{10} \cdot 26,000 + \frac{22}{25} \cdot 15,000 + \frac{1}{50} \cdot 10,000 = 16,000
+$$
 
 - Variance and standard deviation:
-\[
-\Var\left[ A\right] = 131,500,000 \quad \text{and} \quad \sigma_A = 11,467.34
-\]
-\[
-\Var\left[ B\right] = 11,600,000 \quad \text{and} \quad \sigma_B = 3,405.88
-\]
+
+$$
+\text{Var}[A] = 131,500,000 \quad \text{and} \quad \sigma_A = 11,467.34
+$$
+
+$$
+\text{Var}[B] = 11,600,000 \quad \text{and} \quad \sigma_B = 3,405.88
+$$
+
 
 Investment B has lower variability and is usually regarded as less risky.
 
@@ -80,19 +81,23 @@ Investment B has lower variability and is usually regarded as less risky.
 
 ### Utility Functions
 
-- **Utility ($v(w)$)** - A measure of satisfaction or value derived from wealth $w$.
+- **Utility (v(w))** - A measure of satisfaction or value derived from wealth w.
 - **Expected Utility** - The average utility over all possible outcomes.
 
 ### Risk Aversion
 
 - An individual is **risk averse** if they prefer the expected value of wealth over the random wealth itself:
-\[
-W \prec \E\left[ W\right] \quad \Longleftrightarrow \quad \E\left[ v\left( W\right)\right] < v\left( \E\left[ W\right] \right).
-\]
+  
+$$
+W \prec E[W] \quad \Longleftrightarrow \quad E[v(W)] < v(E[W]).
+$$
+
 - **Concave Utility Function** - Indicates risk aversion:
-\[
-\frac{\partial v}{\partial w} > 0  \quad \text{and} \quad \frac{\partial^{2} v}{\partial w^{2}} < 0.
-\]
+  
+$$
+\frac{\partial v}{\partial w} > 0  \quad \text{and} \quad \frac{\partial^2 v}{\partial w^2} < 0.
+$$
+
 
 ### Insurance Example
 
@@ -100,9 +105,10 @@ W \prec \E\left[ W\right] \quad \Longleftrightarrow \quad \E\left[ v\left( W\rig
 - **Without Insurance**: Final wealth is a random variable depending on whether the loss $\ell$ occurs.
 
 The individual chooses insurance if:
-\[
-v\left(w_0 - k \ell\right) > pv\left( w_0 - \ell\right) + (1-p)v\left( w_0 \right).
-\]
+
+$$
+v(w_0 - k \ell) > pv( w_0 - \ell) + (1-p)v( w_0 ).
+$$
 
 ## Risk Pooling for Independent Risks
 
@@ -114,39 +120,46 @@ v\left(w_0 - k \ell\right) > pv\left( w_0 - \ell\right) + (1-p)v\left( w_0 \righ
 ### Expectation and Variance
 
 - **Expectation** of the average loss:
-\[
-\E\left[ A\right] =\E\left[ \frac{\sum_{i=1}^{n}X_{i}}{n}\right] = \mu.
-\]
+  
+$$
+E[A] = E\left[ \sum_{i=1}^{n}X_{i} / n \right] = \mu
+$$
 
 - **Variance** of the average loss:
-\[
-\Var[A] = \frac{\sigma^2}{n}.
-\]
+  
+$$
+\text{Var}[A] = \frac{\sigma^2}{n}.
+$$
 
 Pooling reduces variability and is beneficial for risk-averse individuals.
+
 
 ## Correlation and Dependence
 
 ### Definitions
 
 - **Covariance** - Measure of linear dependence between two variables.
-\[
-\Cov(X,Y) = \E[(X-\E[X])(Y-\E[Y])] = \E[XY] - \E[X]\E[Y].
-\]
+  
+$$
+Cov(X,Y) = E[(X-E[X])(Y-E[Y])] = E[XY] - E[X]E[Y].
+$$
 
 - **Correlation** - Standardized measure of covariance:
-\[
-\rho(X,Y) = \frac{\Cov(X,Y)}{\sigma_X \sigma_Y}.
-\]
+  
+$$
+\rho(X,Y) = \frac{Cov(X,Y)}{\sigma_X \sigma_Y}.
+$$
 
 ### Pooling of Correlated Risks
 
-- Variance of the average loss for two correlated risks $X$ and $Y$:
-\[
-\Var\left[ \frac{X+Y}{2}\right]  = \frac{\sigma ^{2}}{2}\left( 1+\rho\right).
-\]
+- Variance of the average loss for two correlated risks X and Y:
+  
+$$
+Var\left( \frac{X+Y}{2} \right) = \frac{\sigma^2}{2} \left( 1 + \rho \right).
+$$
 
 - **Diversification Benefits**: As long as $\rho \neq 1$, pooling reduces risk.
+
 
 ---
 
