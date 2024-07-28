@@ -350,6 +350,7 @@ Example 9.6: **Run-off triangle actual claim payments** (Hossack et al., 1999 - 
 ### The Chain Ladder method
 
 The central idea is that we assume a regular development pattern:
+
 $$
 C_{i,j} \times f_{j} \approx C_{i, j+1}
 $$
@@ -430,6 +431,7 @@ From the cumulative triangle, find the incremental claims:
 ### Reserves Discounting: Solution
 
 - The present value of the expected outstanding claim payments that will be made in 2021 (middle of the year) is:
+  
 $$
 \frac{110 + 130 + 140 + 150}{\left( 1.05 \right)^{0.5}} = 517.23
 $$
