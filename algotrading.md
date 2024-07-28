@@ -32,7 +32,7 @@ After meeting with the Trading Strategies Team, you were asked to include costs,
 
 Start by running the provided code cells in the "Data Loading" section to generate a DataFrame containing AMD stock closing data. This will serve as the basis for your trading decisions. First, create a data frame named `amd_df` with the given closing prices and corresponding dates. 
 
-```{r load-data}
+```r
 
 # Load data from CSV file
 amd_df <- read.csv("AMD.csv")
@@ -42,14 +42,14 @@ amd_df$date <- as.Date(amd_df$Date)
 amd_df$close <- as.numeric(amd_df$Adj.Close)
 
 amd_df <- amd_df[, c("date", "close")]
-```
+
 
 
 ##Plotting the Data
 Plot the closing prices over time to visualize the price movement.
-```{r plot}
+```r
 plot(amd_df$date, amd_df$close,'l')
-```
+
 
 
 ## Step 2: Trading Algorithm
@@ -64,7 +64,7 @@ Implement the trading algorithm as per the instructions. You should initialize n
 
 
 
-```{r trading}
+```r
 # Initialize columns for trade type, cost/proceeds, and accumulated shares in amd_df
 amd_df$trade_type <- NA
 amd_df$costs_proceeds <- NA  # Corrected column name
@@ -78,14 +78,14 @@ accumulated_shares <- 0
 for (i in 1:nrow(amd_df)) {
 # Fill your code here
 }
-```
+
 
 
 ## Step 3: Customize Trading Period
 - Define a trading period you wanted in the past five years 
-```{r period}
+```r
 # Fill your code here
-```
+
 
 
 ## Step 4: Run Your Algorithm and Analyze Results
@@ -95,18 +95,18 @@ After running your algorithm, check if the trades were executed as expected. Cal
 - Invested Capital: Calculate the total capital invested. This is equal to the sum of the 'costs_proceeds' values for all 'buy' transactions. Since these entries are negative (representing money spent), you should take the negative sum of these values to reflect the total amount invested.
 - ROI Formula: $$\text{ROI} = \left( \frac{\text{Total Profit or Loss}}{\text{Total Capital Invested}} \right) \times 100$$
 
-```{r}
+```r
 # Fill your code here
-```
+
 
 ## Step 5: Profit-Taking Strategy or Stop-Loss Mechanisum (Choose 1)
 - Option 1: Implement a profit-taking strategy that you sell half of your holdings if the price has increased by a certain percentage (e.g., 20%) from the average purchase price.
 - Option 2: Implement a stop-loss mechanism in the trading strategy that you sell half of your holdings if the stock falls by a certain percentage (e.g., 20%) from the average purchase price. You don't need to buy 100 stocks on the days that the stop-loss mechanism is triggered.
 
 
-```{r option}
+```r
 # Fill your code here
-```
+
 
 
 ## Step 6: Summarize Your Findings
@@ -114,9 +114,9 @@ After running your algorithm, check if the trades were executed as expected. Cal
 - Relate your results to a relevant market event and explain why these outcomes may have occurred.
 
 
-```{r}
+```r
 # Fill your code here and Disucss
-```
+
 
 Sample Discussion: On Wednesday, December 6, 2023, AMD CEO Lisa Su discussed a new graphics processor designed for AI servers, with Microsoft and Meta as committed users. The rise in AMD shares on the following Thursday suggests that investors believe in the chipmaker's upward potential and market expectations; My first strategy earned X dollars more than second strategy on this day, therefore providing a better ROI.
 
