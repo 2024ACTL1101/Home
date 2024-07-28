@@ -46,11 +46,13 @@ The principles of risk and insurance are not just theoretical; they are **applie
 ### Example: Investment Choices
 
 You have a choice of investing 10,000 in two potential investments:
-| Outcome | Probability  | Investment A | Investment B |
-|---------|--------------|--------------|--------------|
-| Good    | $1/10$ | 50,000       | 26,000       |
-| Middle  | $22/25$| 12,500       | 15,000       |
-| Bad     | $1/50$ | 0            | 10,000       |
+
+| Outcome | Probability | Investment A | Investment B |
+|---------|-------------|--------------|--------------|
+| Good    | 1/10        | 50,000       | 26,000       |
+| Middle  | 22/25       | 12,500       | 15,000       |
+| Bad     | 1/50        | 0            | 10,000       |
+
 
 #### Solution
 
