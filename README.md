@@ -26,3 +26,5 @@ This is written in markdown language.
 * [Retirement and Health](super.md)
 * [General Insurance](general.md)
 * [Banking and ERM](banking.md)
+* [Algorithmic Trading](algotrading.md) <- filled this
+* [CAPM Model](capm.md) <- filled this
