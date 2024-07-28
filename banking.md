@@ -16,7 +16,6 @@
   - Variety of work (26%) compared to traditional areas
   - Reflected in the wide range of current roles of survey respondents
 
----
 
 ## ERM and Risk Classification
 
@@ -35,7 +34,6 @@ Enterprise Risk Management - Risk Classification
 
 ![erm](erm.png)
 
----
 
 ### Introduction to Risk Categories
 
@@ -73,8 +71,6 @@ Enterprise Risk Management - Risk Classification
   - Default does not necessarily mean legal bankruptcy.
   - Failure to fulfill contractual obligations in a timely manner due to inability or unwillingness.
 
----
-
 ### Credit Risk Categories
 
 Can be identified by source of credit risk:
@@ -91,12 +87,6 @@ Can be identified by source of credit risk:
 - Credit cards and overdrafts
 - Other unsecured retail lending
 
----
-
-### Credit Risk Categories - 2
-
-Can be identified by source of credit risk:
-
 **3. Corporate lending:**
 - Commercial mortgages
 - Other secured commercial lending (e.g., Asset finance, trade finance)
@@ -107,13 +97,6 @@ Can be identified by source of credit risk:
 - 5. Money market counterparties
 - 6. Tenant default
 - 7. Over-the-counter (OTC) counterparty default
-
----
-
-### Credit Risk Categories - 3
-
-Can be identified by source of credit risk:
-
 - 8. Derivative exchanges and clearing house counterparty default risk
 - 9. Securities lending counterparty default risk
 - 10. Dealing and settlement counterparty default risk
@@ -134,8 +117,6 @@ Effective management of credit risk is:
   - Risk that institutional and individual borrowers may default on loans
   - Must underwrite and price each loan according to its credit risk, ensuring the overall portfolio of loans is well diversified
 
----
-
 ### Traditional Approach to Credit Risk
 
 Traditional banking calls for each exposure to be individually underwritten: **Four Cs of credit underwriting**:
@@ -145,10 +126,6 @@ Traditional banking calls for each exposure to be individually underwritten: **F
 - **Capital:** Financial resources of the counterparty other than those arising from the loan itself
 - **Conditions:** Exogenous factors applicable to the economy, industry, or region
 
----
-
-### Traditional Approach to Credit Risk - 2
-
 Traditional banking calls for each exposure to be individually underwritten: **More Cs**:
 
 - **Collateral:** Right to seize property or other assets if the counterparty defaults 
@@ -157,8 +134,6 @@ Traditional banking calls for each exposure to be individually underwritten: **M
 
 - **Covenants:**  Binding promises made by the counterparty to constrain its future behavior
   - Keeping total leverage within a prescribed max
-
----
 
 ### Modern Approach to Credit Risk
 
@@ -172,7 +147,6 @@ Credit Risk Management
 
 - Probabilistic approach: losses are considered to be stochastic, actual losses are expected to follow a probability distribution
 
----
 
 ### Key Credit Risk Concept
 
@@ -186,7 +160,6 @@ Credit Risk Management
 
 - **Exposure:** The loan amount or market value of securities that the organization is due to receive from the counterparty at the time of the credit event
 
----
 
 ### Expected Loss (EL)
 
@@ -202,7 +175,6 @@ $$
 - Loss Given Default (LGD): 'Severity', net loss in the event of default
 - Exposure at Default (EAD): Expected exposure at the time of the credit event
 
----
 
 ### Probability of Default (PD)
 
@@ -212,7 +184,6 @@ $$
 - Reflect the underlying credit risks of the particular counterparty
 - Derived from observed defaults, reference data sets, counterparty's credit rating, statistical models
 
----
 
 ### Loss Given Default (LGD)
 
@@ -223,8 +194,6 @@ $$
 - A function of facility type (e.g., bank loans, bonds), seniority (e.g., senior bond, junior bond) and collateral (e.g., secured bond, unsecured bond)
 - Recovery rates for publicly traded bonds can be obtained from the major rating agencies (e.g., if recovery rate = 60%, then LGD = 40%); other facilities and transactions - few public data, must be estimated from firm's own recovery data
 
----
-
 ### Exposure at Default (EAD)
 
 **Expected exposure at the time of the credit event**   
@@ -232,8 +201,6 @@ $$
 - Depends on the type of transaction and on the occurrence of future random events
 - Loans: Usually outstanding amount 
 - Trading exposures: Expected exposure needs to be modeled (e.g., expected exposures of long-dated transactions - swaps or forwards)
-
----
 
 ### Expected Loss - Example
 
@@ -254,9 +221,7 @@ $$
 = \$43,200
 $$
 
----
-
-# Unexpected Loss (UL)
+### Unexpected Loss (UL)
 
 **The standard deviation ($\sigma$) of credit losses**
 
@@ -265,10 +230,7 @@ $$
 - Existence of UL creates the need for a capital 'cushion' to safeguard the viability of the organization if losses turn out to be unexpectedly high
 - Some UL are SO unlikely - uneconomic to hold capital against them (sets the risk of failure a firm is willing to tolerate)
 
----
-
-
-# Credit Risk Models
+### Credit Risk Models
 
 - **Credit rating**: Issued by credit rating agencies like Moody's, S&P, Fitch
 - **Credit scoring**: Binomial classification system - score $\geq$ discrimination threshold $\rightarrow$ take action (e.g., extend credit)
