@@ -130,6 +130,6 @@ Suppose the current risk-free rate is 5.0%, and the annual expected return for t
 
 **Answer:**
 
-```{r pi}
+```r
 #fill the code
 ```
