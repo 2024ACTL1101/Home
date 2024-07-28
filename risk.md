@@ -48,9 +48,9 @@ The principles of risk and insurance are not just theoretical; they are **applie
 You have a choice of investing $10,000 in two potential investments:
 | Outcome | Probability  | Investment A | Investment B |
 |---------|--------------|--------------|--------------|
-| Good    | $\frac{1}{10}$ | 50,000       | 26,000       |
-| Middle  | $\frac{22}{25}$| 12,500       | 15,000       |
-| Bad     | $\frac{1}{50}$ | 0            | 10,000       |
+| Good    | $1/10$ | 50,000       | 26,000       |
+| Middle  | $22/25$| 12,500       | 15,000       |
+| Bad     | $1/50$ | 0            | 10,000       |
 
 #### Solution
 
