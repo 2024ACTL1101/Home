@@ -93,15 +93,15 @@ Can be identified by source of credit risk:
 - SME unsecured lending
 - Wholesale unsecured lending (e.g., syndicated loans)
 
-- 4. Deposit counterparties
-- 5. Money market counterparties
-- 6. Tenant default
-- 7. Over-the-counter (OTC) counterparty default
-- 8. Derivative exchanges and clearing house counterparty default risk
-- 9. Securities lending counterparty default risk
-- 10. Dealing and settlement counterparty default risk
-- 11. Custodian counterparty default risk (this should be mitigated by ring-fencing of assets from those of the custodian)
-- 12. (Re)insurer default relating to default of an insurer and resulting loss of cover (as distinct from any loss on investment products issued by that insurer)
+4. Deposit counterparties
+5. Money market counterparties
+6. Tenant default
+7. Over-the-counter (OTC) counterparty default
+8. Derivative exchanges and clearing house counterparty default risk
+9. Securities lending counterparty default risk
+10. Dealing and settlement counterparty default risk
+11. Custodian counterparty default risk (this should be mitigated by ring-fencing of assets from those of the custodian)
+12. (Re)insurer default relating to default of an insurer and resulting loss of cover (as distinct from any loss on investment products issued by that insurer)
 
 ---
 
