@@ -33,7 +33,6 @@ After meeting with the Trading Strategies Team, you were asked to include costs,
 Start by running the provided code cells in the "Data Loading" section to generate a DataFrame containing AMD stock closing data. This will serve as the basis for your trading decisions. First, create a data frame named `amd_df` with the given closing prices and corresponding dates. 
 
 ```r
-
 # Load data from CSV file
 amd_df <- read.csv("AMD.csv")
 
@@ -47,6 +46,7 @@ amd_df <- amd_df[, c("date", "close")]
 
 ##Plotting the Data
 Plot the closing prices over time to visualize the price movement.
+
 ```r
 plot(amd_df$date, amd_df$close,'l')
 
