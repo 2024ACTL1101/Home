@@ -59,20 +59,23 @@ The Capital Asset Pricing Model (CAPM) is a financial model that describes the r
 #### The CAPM Formula
 The formula for CAPM is given by:
 
-\[ E(R_i) = R_f + \beta_i (E(R_m) - R_f) \]
+$$
+E(R_i) = R_f + \beta_i (E(R_m) - R_f)
+$$
 
 Where:
 
-- \( E(R_i) \) is the expected return on the capital asset,
-- \( R_f \) is the risk-free rate,
-- \( \beta_i \) is the beta of the security, which represents the systematic risk of the security,
-- \( E(R_m) \) is the expected return of the market.
+- $E(R_i)$ is the expected return on the capital asset,
+- $R_f$ is the risk-free rate,
+- $\beta_i$ is the beta of the security, which represents the systematic risk of the security,
+- $E(R_m)$ is the expected return of the market.
 
 
 
 #### CAPM Model Daily Estimation
 
 - **Calculate Returns**: First, we calculate the daily returns for AMD and the S&P 500 from their adjusted closing prices. This should be done by dividing the difference in prices between two consecutive days by the price at the beginning of the period.
+  
 $$
 \text{Daily Return} = \frac{\text{Today's Price} - \text{Previous Trading Day's Price}}{\text{Previous Trading Day's Price}}
 $$
@@ -82,6 +85,7 @@ $$
 ```
 
 - **Calculate Risk-Free Rate**: Calculate the daily risk-free rate by conversion of annual risk-free Rate. This conversion accounts for the compounding effect over the days of the year and is calculated using the formula:
+  
 $$
 \text{Daily Risk-Free Rate} = \left(1 + \frac{\text{Annual Rate}}{100}\right)^{\frac{1}{360}} - 1
 $$
@@ -122,7 +126,6 @@ Plot the scatter plot of AMD vs. S&P 500 excess returns and add the CAPM regress
 ### Step 3: Predictions Interval
 Suppose the current risk-free rate is 5.0%, and the annual expected return for the S&P 500 is 13.3%. Determine a 90% prediction interval for AMD's annual expected return.
 
-*Hint: Calculate the daily standard error of the forecast ($s_f$), and assume that the annual standard error for prediction is $s_f \times \sqrt{252}$. Use the simple return average method to convert daily stock returns to annual returns if needed.*
 
 
 **Answer:**
