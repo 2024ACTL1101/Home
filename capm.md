@@ -24,7 +24,7 @@ The CAPM provides a framework to understand the relationship between systematic 
 - `quantmod` stands for "Quantitative Financial Modelling Framework". It was developed to aid the quantitative trader in the development, testing, and deployment of statistically based trading models.
 - Make sure to install the `quantmod` package by running `install.packages("quantmod")` in the R console before proceeding.
 
-```{r load-data}
+```r
 # Set start and end dates
 start_date <- as.Date("2019-05-20")
 end_date <- as.Date("2024-05-20")
@@ -45,7 +45,7 @@ df <- merge(df, rf_df, by = "Date")
 ```
 
 #### Data Processing 
-```{r data}
+```r
 colSums(is.na(df))
 # Fill N/A RF data
 df <- df %>%
@@ -80,7 +80,7 @@ $$
 \text{Daily Return} = \frac{\text{Today's Price} - \text{Previous Trading Day's Price}}{\text{Previous Trading Day's Price}}
 $$
 
-```{r return}
+```r
 #fill the code
 ```
 
@@ -90,21 +90,21 @@ $$
 \text{Daily Risk-Free Rate} = \left(1 + \frac{\text{Annual Rate}}{100}\right)^{\frac{1}{360}} - 1
 $$
 
-```{r riskfree}
+```r
 #fill the code
 ```
 
 
 - **Calculate Excess Returns**: Compute the excess returns for AMD and the S&P 500 by subtracting the daily risk-free rate from their respective returns.
 
-```{r excess return}
+```r
 #fill the code
 ```
 
 
 - **Perform Regression Analysis**: Using linear regression, we estimate the beta (\(\beta\)) of AMD relative to the S&P 500. Here, the dependent variable is the excess return of AMD, and the independent variable is the excess return of the S&P 500. Beta measures the sensitivity of the stock's returns to fluctuations in the market.
 
-```{r lm}
+```r
 #fill the code
 ```
 
@@ -119,7 +119,7 @@ What is your \(\beta\)? Is AMD more volatile or less volatile than the market?
 #### Plotting the CAPM Line
 Plot the scatter plot of AMD vs. S&P 500 excess returns and add the CAPM regression line.
 
-```{r plot}
+```r
 #fill the code
 ```
 
