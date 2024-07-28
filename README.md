@@ -20,6 +20,7 @@ This is written in markdown language.
 
 * [Probability](probability.md)
 * [Financial Mathematics](financial_math.md)
-* [Life Insurance](life.md)
-* [Statistical Machine Learning](statsml.md)
+* [Life Insurance and Annuity](life.md)
+* [Risk and Insurance](risk.md)
+* [Statistical Machine Learning and AI](statsml.md)
 * ...
