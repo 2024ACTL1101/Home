@@ -340,13 +340,6 @@ Summarized in the following table:
 
 
 
-## Case Study
-
-For a practical application of these principles, visit the following link to explore a detailed case study on life insurance applications. This case study provides insights into real-world scenarios and demonstrates the implementation of actuarial principles in solving complex problems.
-
-- [Case Study on Life Insurance Applications](lifeapp.md)
-
-This case study is designed to enrich your understanding by connecting theoretical knowledge with its practical usage. We recommend this for learners at all levels who wish to see how actuarial science is applied in contemporary settings.
 
 
 
